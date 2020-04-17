@@ -1,0 +1,375 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: 0bb38aea-1561-417b-9998-bc53e4b3531c@1.worker-org-767b688855-pf2rl.gce-production-3
+version: v6.2.8 https://github.com/travis-ci/worker/tree/6d3048d96b26562be21fa1a8b8144f4c4cecd083
+instance: travis-job-9b19b15e-67a3-42bb-9567-30d130f95b87 precise-php-stable-alternative (via amqp)
+startup: 6.073087532s
+travis_fold:end:worker_info[0Ktravis_time:start:2b40f868[0Ktravis_time:end:2b40f868:start=1585166915105014832,finish=1585166915195579401,duration=90564569,event=no_world_writable_dirs[0Ktravis_time:start:0364ca78[0Ktravis_time:end:0364ca78:start=1585166915198175927,finish=1585166915204736305,duration=6560378,event=agent[0Ktravis_time:start:05bd2cd9[0Ktravis_time:end:05bd2cd9:start=1585166915207065871,finish=1585166915208712545,duration=1646674,event=check_unsupported[0Ktravis_time:start:1ebfc66a[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: php
+Build dist: precise
+Build id: 666960446
+Job id: 666960457
+Runtime kernel version: 3.13.0-115-generic
+travis-build version: 6c0f7380c
+[34m[1mBuild image provisioning date and time[0m
+Tue Apr 11 21:48:56 UTC 2017
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 12.04.5 LTS
+Release:	12.04
+Codename:	precise
+[34m[1mLinux Version[0m
+3.13.0-115-generic
+[34m[1mCookbooks Version[0m
+cc4eb5e https://github.com/travis-ci/travis-cookbooks/tree/cc4eb5e
+[34m[1mGit version[0m
+git version 1.8.5.6
+[34m[1mbash version[0m
+GNU bash, version 4.2.25(1)-release (x86_64-pc-linux-gnu)
+Copyright (C) 2011 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+
+This is free software; you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+[34m[1mGCC version[0m
+gcc (Ubuntu/Linaro 4.6.3-1ubuntu5) 4.6.3
+Copyright (C) 2011 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+[34m[1mLLVM version[0m
+clang version 3.4 (tags/RELEASE_34/final)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.2.6
+[34m[1mPre-installed Node.js versions[0m
+v0.10.36
+[34m[1mPre-installed Go versions[0m
+1.7.4
+[34m[1mmysql --version[0m
+mysql  Ver 14.14 Distrib 5.5.54, for debian-linux-gnu (x86_64) using readline 6.2
+[34m[1mPre-installed PostgreSQL versions[0m
+9.1.24
+9.2.20
+9.3.16
+9.4.11
+9.5.6
+[34m[1mRedis version[0m
+redis-server 3.0.7
+[34m[1mriak version[0m
+2.0.2
+[34m[1mmemcached version[0m
+1.4.13
+[34m[1mMongoDB version[0m
+MongoDB 2.4.14
+[34m[1mCouchDB version[0m
+couchdb 1.6.1
+[34m[1mInstalled Sphinx versions[0m
+2.0.10
+2.1.9
+2.2.6
+[34m[1mDefault Sphinx version[0m
+2.2.6
+[34m[1mInstalled Firefox version[0m
+firefox 38.4.0esr
+[34m[1mPhantomJS version[0m
+1.9.8
+[34m[1mant -version[0m
+Apache Ant(TM) version 1.8.2 compiled on December 3 2011
+[34m[1mmvn -version[0m
+Apache Maven 3.2.5 (12a6b3acb947671f09b81f49094c53f426d8cea1; 2014-12-14T17:29:23+00:00)
+Maven home: /usr/local/maven
+Java version: 1.7.0_80, vendor: Oracle Corporation
+Java home: /usr/lib/jvm/java-7-oracle/jre
+Default locale: en, platform encoding: UTF-8
+OS name: "linux", version: "3.13.0-115-generic", arch: "amd64", family: "unix"
+[34m[1mphpenv versions[0m
+* system (set by /home/travis/.phpenv/version)
+  5.3.29
+  5.3.3
+  5.4
+  5.4.45
+  5.5.29
+  5.5.9
+  5.6.13
+travis_fold:end:system_info[0K
+travis_time:end:1ebfc66a:start=1585166915210794550,finish=1585166915217713414,duration=6918864,event=show_system_info[0Ktravis_time:start:13d07684[0Ktravis_time:end:13d07684:start=1585166915220070742,finish=1585166915239025065,duration=18954323,event=rm_riak_source[0Ktravis_time:start:03e8d6d0[0Ktravis_time:end:03e8d6d0:start=1585166915241619617,finish=1585166915245550103,duration=3930486,event=fix_rwky_redis[0Ktravis_time:start:010079d0[0Ktravis_time:end:010079d0:start=1585166915247975714,finish=1585166915568889941,duration=320914227,event=wait_for_network[0Ktravis_time:start:0631e5d9[0Ktravis_time:end:0631e5d9:start=1585166915571265655,finish=1585166916492163645,duration=920897990,event=update_apt_keys[0Ktravis_time:start:0147156c[0Ktravis_time:end:0147156c:start=1585166916494568361,finish=1585166916531423884,duration=36855523,event=fix_hhvm_source[0Ktravis_time:start:00548ee6[0Ktravis_time:end:00548ee6:start=1585166916533844357,finish=1585166916535886111,duration=2041754,event=update_mongo_arch[0Ktravis_time:start:05317e42[0Ktravis_time:end:05317e42:start=1585166916538186647,finish=1585166916563483567,duration=25296920,event=fix_sudo_enabled_trusty[0Ktravis_time:start:090d0a43[0Ktravis_time:end:090d0a43:start=1585166916565852952,finish=1585166916567635942,duration=1782990,event=update_glibc[0Ktravis_time:start:004f407c[0Ktravis_time:end:004f407c:start=1585166916569893571,finish=1585166916576307596,duration=6414025,event=clean_up_path[0Ktravis_time:start:093d72cb[0Ktravis_time:end:093d72cb:start=1585166916578468198,finish=1585166916589568575,duration=11100377,event=fix_resolv_conf[0Ktravis_time:start:0f635310[0Ktravis_time:end:0f635310:start=1585166916592048060,finish=1585166916616721834,duration=24673774,event=fix_etc_hosts[0Ktravis_time:start:135f36ed[0Ktravis_time:end:135f36ed:start=1585166916619124335,finish=1585166916626186692,duration=7062357,event=fix_mvn_settings_xml[0Ktravis_time:start:116d97f4[0Ktravis_time:end:116d97f4:start=1585166916628478968,finish=1585166916635601820,duration=7122852,event=no_ipv6_localhost[0Ktravis_time:start:3413d1a8[0Ktravis_time:end:3413d1a8:start=1585166916637912632,finish=1585166916643971283,duration=6058651,event=fix_etc_mavenrc[0Ktravis_time:start:062c11ae[0Ktravis_time:end:062c11ae:start=1585166916646205397,finish=1585166916648504377,duration=2298980,event=fix_wwdr_certificate[0Ktravis_time:start:012e222c[0Ktravis_time:end:012e222c:start=1585166916650662399,finish=1585166916703469423,duration=52807024,event=put_localhost_first[0Ktravis_time:start:1b5afb16[0Ktravis_time:end:1b5afb16:start=1585166916705755582,finish=1585166916707528727,duration=1773145,event=home_paths[0Ktravis_time:start:03fea016[0Ktravis_time:end:03fea016:start=1585166916709747180,finish=1585166916718803241,duration=9056061,event=disable_initramfs[0Ktravis_time:start:16259a98[0Ktravis_time:end:16259a98:start=1585166916721178198,finish=1585166916728936624,duration=7758426,event=disable_ssh_roaming[0Ktravis_time:start:317f2ae0[0Ktravis_time:end:317f2ae0:start=1585166916731103321,finish=1585166916732788911,duration=1685590,event=debug_tools[0Ktravis_time:start:1e2ca5a0[0Ktravis_time:end:1e2ca5a0:start=1585166916734894212,finish=1585166916737116821,duration=2222609,event=uninstall_oclint[0Ktravis_time:start:0746fc32[0Ktravis_time:end:0746fc32:start=1585166916739288727,finish=1585166916741413494,duration=2124767,event=rvm_use[0Ktravis_time:start:10814790[0Ktravis_time:end:10814790:start=1585166916743590786,finish=1585166916749129953,duration=5539167,event=rm_etc_boto_cfg[0Ktravis_time:start:03f442fd[0Ktravis_time:end:03f442fd:start=1585166916751494112,finish=1585166916755139643,duration=3645531,event=rm_oraclejdk8_symlink[0Ktravis_time:start:10b5d47a[0Ktravis_time:end:10b5d47a:start=1585166916757397539,finish=1585166916780845588,duration=23448049,event=enable_i386[0Ktravis_time:start:0a9dade0[0Ktravis_time:end:0a9dade0:start=1585166916783320023,finish=1585166916788687156,duration=5367133,event=update_rubygems[0Ktravis_time:start:129560cb[0Ktravis_time:end:129560cb:start=1585166916790972369,finish=1585166916794467273,duration=3494904,event=ensure_path_components[0Ktravis_time:start:0657a19a[0Ktravis_time:end:0657a19a:start=1585166916796756496,finish=1585166916798483979,duration=1727483,event=redefine_curl[0Ktravis_time:start:02852e09[0Ktravis_time:end:02852e09:start=1585166916800772041,finish=1585166916802485071,duration=1713030,event=nonblock_pipe[0Ktravis_time:start:19e17cfa[0Ktravis_time:end:19e17cfa:start=1585166916804727354,finish=1585166922822719344,duration=6017991990,event=apt_get_update[0Ktravis_time:start:12ab5f63[0Ktravis_time:end:12ab5f63:start=1585166922825307328,finish=1585166922827129918,duration=1822590,event=deprecate_xcode_64[0Ktravis_time:start:053dfa7c[0Ktravis_time:end:053dfa7c:start=1585166922829568807,finish=1585166922832589514,duration=3020707,event=update_heroku[0Ktravis_time:start:237f3438[0Ktravis_time:end:237f3438:start=1585166922835065306,finish=1585166922836855872,duration=1790566,event=shell_session_update[0Ktravis_time:start:0d3d8f0e[0Ktravis_fold:start:docker_mtu[0Ktee: /etc/docker/daemon.json: No such file or directory
+docker: unrecognized service
+travis_fold:end:docker_mtu[0Ktravis_time:end:0d3d8f0e:start=1585166922839114273,finish=1585166922855989611,duration=16875338,event=set_docker_mtu[0Ktravis_time:start:12615f3c[0Ktravis_fold:start:resolvconf[0Kresolvconf stop/waiting
+resolvconf start/running
+travis_fold:end:resolvconf[0Ktravis_time:end:12615f3c:start=1585166922858336339,finish=1585166922901409541,duration=43073202,event=resolvconf[0Ktravis_time:start:068337b4[0Ktravis_time:end:068337b4:start=1585166922903720545,finish=1585166923000881144,duration=97160599,event=maven_central_mirror[0Ktravis_time:start:1aa1d3f9[0Ktravis_time:end:1aa1d3f9:start=1585166923003470512,finish=1585166923070914765,duration=67444253,event=maven_https[0Ktravis_time:start:037ecc54[0Ktravis_time:end:037ecc54:start=1585166923073550018,finish=1585166923075327258,duration=1777240,event=fix_ps4[0Ktravis_time:start:10419298[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:0488bb12[0K$ git clone --depth=50 --branch=phpcompat-74 https://github.com/wpengine/phpcompat.git wpengine/phpcompat
+Cloning into 'wpengine/phpcompat'...
+remote: Enumerating objects: 868, done.[K
+remote: Counting objects:   0% (1/868)[Kremote: Counting objects:   1% (9/868)[Kremote: Counting objects:   2% (18/868)[Kremote: Counting objects:   3% (27/868)[Kremote: Counting objects:   4% (35/868)[Kremote: Counting objects:   5% (44/868)[Kremote: Counting objects:   6% (53/868)[Kremote: Counting objects:   7% (61/868)[Kremote: Counting objects:   8% (70/868)[Kremote: Counting objects:   9% (79/868)[Kremote: Counting objects:  10% (87/868)[Kremote: Counting objects:  11% (96/868)[Kremote: Counting objects:  12% (105/868)[Kremote: Counting objects:  13% (113/868)[Kremote: Counting objects:  14% (122/868)[Kremote: Counting objects:  15% (131/868)[Kremote: Counting objects:  16% (139/868)[Kremote: Counting objects:  17% (148/868)[Kremote: Counting objects:  18% (157/868)[Kremote: Counting objects:  19% (165/868)[Kremote: Counting objects:  20% (174/868)[Kremote: Counting objects:  21% (183/868)[Kremote: Counting objects:  22% (191/868)[Kremote: Counting objects:  23% (200/868)[Kremote: Counting objects:  24% (209/868)[Kremote: Counting objects:  25% (217/868)[Kremote: Counting objects:  26% (226/868)[Kremote: Counting objects:  27% (235/868)[Kremote: Counting objects:  28% (244/868)[Kremote: Counting objects:  29% (252/868)[Kremote: Counting objects:  30% (261/868)[Kremote: Counting objects:  31% (270/868)[Kremote: Counting objects:  32% (278/868)[Kremote: Counting objects:  33% (287/868)[Kremote: Counting objects:  34% (296/868)[Kremote: Counting objects:  35% (304/868)[Kremote: Counting objects:  36% (313/868)[Kremote: Counting objects:  37% (322/868)[Kremote: Counting objects:  38% (330/868)[Kremote: Counting objects:  39% (339/868)[Kremote: Counting objects:  40% (348/868)[Kremote: Counting objects:  41% (356/868)[Kremote: Counting objects:  42% (365/868)[Kremote: Counting objects:  43% (374/868)[Kremote: Counting objects:  44% (382/868)[Kremote: Counting objects:  45% (391/868)[Kremote: Counting objects:  46% (400/868)[Kremote: Counting objects:  47% (408/868)[Kremote: Counting objects:  48% (417/868)[Kremote: Counting objects:  49% (426/868)[Kremote: Counting objects:  50% (434/868)[Kremote: Counting objects:  51% (443/868)[Kremote: Counting objects:  52% (452/868)[Kremote: Counting objects:  53% (461/868)[Kremote: Counting objects:  54% (469/868)[Kremote: Counting objects:  55% (478/868)[Kremote: Counting objects:  56% (487/868)[Kremote: Counting objects:  57% (495/868)[Kremote: Counting objects:  58% (504/868)[Kremote: Counting objects:  59% (513/868)[Kremote: Counting objects:  60% (521/868)[Kremote: Counting objects:  61% (530/868)[Kremote: Counting objects:  62% (539/868)[Kremote: Counting objects:  63% (547/868)[Kremote: Counting objects:  64% (556/868)[Kremote: Counting objects:  65% (565/868)[Kremote: Counting objects:  66% (573/868)[Kremote: Counting objects:  67% (582/868)[Kremote: Counting objects:  68% (591/868)[Kremote: Counting objects:  69% (599/868)[Kremote: Counting objects:  70% (608/868)[Kremote: Counting objects:  71% (617/868)[Kremote: Counting objects:  72% (625/868)[Kremote: Counting objects:  73% (634/868)[Kremote: Counting objects:  74% (643/868)[Kremote: Counting objects:  75% (651/868)[Kremote: Counting objects:  76% (660/868)[Kremote: Counting objects:  77% (669/868)[Kremote: Counting objects:  78% (678/868)[Kremote: Counting objects:  79% (686/868)[Kremote: Counting objects:  80% (695/868)[Kremote: Counting objects:  81% (704/868)[Kremote: Counting objects:  82% (712/868)[Kremote: Counting objects:  83% (721/868)[Kremote: Counting objects:  84% (730/868)[Kremote: Counting objects:  85% (738/868)[Kremote: Counting objects:  86% (747/868)[Kremote: Counting objects:  87% (756/868)[Kremote: Counting objects:  88% (764/868)[Kremote: Counting objects:  89% (773/868)[Kremote: Counting objects:  90% (782/868)[Kremote: Counting objects:  91% (790/868)[Kremote: Counting objects:  92% (799/868)[Kremote: Counting objects:  93% (808/868)[Kremote: Counting objects:  94% (816/868)[Kremote: Counting objects:  95% (825/868)[Kremote: Counting objects:  96% (834/868)[Kremote: Counting objects:  97% (842/868)[Kremote: Counting objects:  98% (851/868)[Kremote: Counting objects:  99% (860/868)[Kremote: Counting objects: 100% (868/868)[Kremote: Counting objects: 100% (868/868), done.[K
+remote: Compressing objects:   0% (1/423)[Kremote: Compressing objects:   1% (5/423)[Kremote: Compressing objects:   2% (9/423)[Kremote: Compressing objects:   3% (13/423)[Kremote: Compressing objects:   4% (17/423)[Kremote: Compressing objects:   5% (22/423)[Kremote: Compressing objects:   6% (26/423)[Kremote: Compressing objects:   7% (30/423)[Kremote: Compressing objects:   8% (34/423)[Kremote: Compressing objects:   9% (39/423)[Kremote: Compressing objects:  10% (43/423)[Kremote: Compressing objects:  11% (47/423)[Kremote: Compressing objects:  12% (51/423)[Kremote: Compressing objects:  13% (55/423)[Kremote: Compressing objects:  14% (60/423)[Kremote: Compressing objects:  15% (64/423)[Kremote: Compressing objects:  16% (68/423)[Kremote: Compressing objects:  17% (72/423)[Kremote: Compressing objects:  18% (77/423)[Kremote: Compressing objects:  19% (81/423)[Kremote: Compressing objects:  20% (85/423)[Kremote: Compressing objects:  21% (89/423)[Kremote: Compressing objects:  22% (94/423)[Kremote: Compressing objects:  23% (98/423)[Kremote: Compressing objects:  24% (102/423)[Kremote: Compressing objects:  25% (106/423)[Kremote: Compressing objects:  26% (110/423)[Kremote: Compressing objects:  27% (115/423)[Kremote: Compressing objects:  28% (119/423)[Kremote: Compressing objects:  29% (123/423)[Kremote: Compressing objects:  30% (127/423)[Kremote: Compressing objects:  31% (132/423)[Kremote: Compressing objects:  32% (136/423)[Kremote: Compressing objects:  33% (140/423)[Kremote: Compressing objects:  34% (144/423)[Kremote: Compressing objects:  35% (149/423)[Kremote: Compressing objects:  36% (153/423)[Kremote: Compressing objects:  37% (157/423)[Kremote: Compressing objects:  38% (161/423)[Kremote: Compressing objects:  39% (165/423)[Kremote: Compressing objects:  40% (170/423)[Kremote: Compressing objects:  41% (174/423)[Kremote: Compressing objects:  42% (178/423)[Kremote: Compressing objects:  43% (182/423)[Kremote: Compressing objects:  44% (187/423)[Kremote: Compressing objects:  45% (191/423)[Kremote: Compressing objects:  46% (195/423)[Kremote: Compressing objects:  47% (199/423)[Kremote: Compressing objects:  48% (204/423)[Kremote: Compressing objects:  49% (208/423)[Kremote: Compressing objects:  50% (212/423)[Kremote: Compressing objects:  51% (216/423)[Kremote: Compressing objects:  52% (220/423)[Kremote: Compressing objects:  53% (225/423)[Kremote: Compressing objects:  54% (229/423)[Kremote: Compressing objects:  55% (233/423)[Kremote: Compressing objects:  56% (237/423)[Kremote: Compressing objects:  57% (242/423)[Kremote: Compressing objects:  58% (246/423)[Kremote: Compressing objects:  59% (250/423)[Kremote: Compressing objects:  60% (254/423)[Kremote: Compressing objects:  61% (259/423)[Kremote: Compressing objects:  62% (263/423)[Kremote: Compressing objects:  63% (267/423)[Kremote: Compressing objects:  64% (271/423)[Kremote: Compressing objects:  65% (275/423)[Kremote: Compressing objects:  66% (280/423)[Kremote: Compressing objects:  67% (284/423)[Kremote: Compressing objects:  68% (288/423)[Kremote: Compressing objects:  69% (292/423)[Kremote: Compressing objects:  70% (297/423)[Kremote: Compressing objects:  71% (301/423)[Kremote: Compressing objects:  72% (305/423)[Kremote: Compressing objects:  73% (309/423)[Kremote: Compressing objects:  74% (314/423)[Kremote: Compressing objects:  75% (318/423)[Kremote: Compressing objects:  76% (322/423)[Kremote: Compressing objects:  77% (326/423)[Kremote: Compressing objects:  78% (330/423)[Kremote: Compressing objects:  79% (335/423)[Kremote: Compressing objects:  80% (339/423)[Kremote: Compressing objects:  81% (343/423)[Kremote: Compressing objects:  82% (347/423)[Kremote: Compressing objects:  83% (352/423)[Kremote: Compressing objects:  84% (356/423)[Kremote: Compressing objects:  85% (360/423)[Kremote: Compressing objects:  86% (364/423)[Kremote: Compressing objects:  87% (369/423)[Kremote: Compressing objects:  88% (373/423)[Kremote: Compressing objects:  89% (377/423)[Kremote: Compressing objects:  90% (381/423)[Kremote: Compressing objects:  91% (385/423)[Kremote: Compressing objects:  92% (390/423)[Kremote: Compressing objects:  93% (394/423)[Kremote: Compressing objects:  94% (398/423)[Kremote: Compressing objects:  95% (402/423)[Kremote: Compressing objects:  96% (407/423)[Kremote: Compressing objects:  97% (411/423)[Kremote: Compressing objects:  98% (415/423)[Kremote: Compressing objects:  99% (419/423)[Kremote: Compressing objects: 100% (423/423)[Kremote: Compressing objects: 100% (423/423), done.[K
+Receiving objects:   0% (1/868)   Receiving objects:   1% (9/868)   Receiving objects:   2% (18/868)   Receiving objects:   3% (27/868)   Receiving objects:   4% (35/868)   Receiving objects:   5% (44/868)   Receiving objects:   6% (53/868)   Receiving objects:   7% (61/868)   Receiving objects:   8% (70/868)   Receiving objects:   9% (79/868)   Receiving objects:  10% (87/868)   Receiving objects:  11% (96/868)   Receiving objects:  12% (105/868)   Receiving objects:  13% (113/868)   Receiving objects:  14% (122/868)   Receiving objects:  15% (131/868)   Receiving objects:  16% (139/868)   Receiving objects:  17% (148/868)   Receiving objects:  18% (157/868)   Receiving objects:  19% (165/868)   Receiving objects:  20% (174/868)   Receiving objects:  21% (183/868)   Receiving objects:  22% (191/868)   Receiving objects:  23% (200/868)   Receiving objects:  24% (209/868)   Receiving objects:  25% (217/868)   Receiving objects:  26% (226/868)   Receiving objects:  27% (235/868)   Receiving objects:  28% (244/868)   Receiving objects:  29% (252/868)   Receiving objects:  30% (261/868)   Receiving objects:  31% (270/868)   Receiving objects:  32% (278/868)   Receiving objects:  33% (287/868)   Receiving objects:  34% (296/868)   Receiving objects:  35% (304/868)   Receiving objects:  36% (313/868)   Receiving objects:  37% (322/868)   Receiving objects:  38% (330/868)   Receiving objects:  39% (339/868)   Receiving objects:  40% (348/868)   Receiving objects:  41% (356/868)   Receiving objects:  42% (365/868)   Receiving objects:  43% (374/868)   Receiving objects:  44% (382/868)   Receiving objects:  45% (391/868)   Receiving objects:  46% (400/868)   Receiving objects:  47% (408/868)   Receiving objects:  48% (417/868)   Receiving objects:  49% (426/868)   Receiving objects:  50% (434/868)   Receiving objects:  51% (443/868)   Receiving objects:  52% (452/868)   Receiving objects:  53% (461/868)   Receiving objects:  54% (469/868)   Receiving objects:  55% (478/868)   Receiving objects:  56% (487/868)   Receiving objects:  57% (495/868)   Receiving objects:  58% (504/868)   Receiving objects:  59% (513/868)   Receiving objects:  60% (521/868)   Receiving objects:  61% (530/868)   Receiving objects:  62% (539/868)   Receiving objects:  63% (547/868)   Receiving objects:  64% (556/868)   Receiving objects:  65% (565/868)   Receiving objects:  66% (573/868)   Receiving objects:  67% (582/868)   Receiving objects:  68% (591/868)   Receiving objects:  69% (599/868)   Receiving objects:  70% (608/868)   Receiving objects:  71% (617/868)   Receiving objects:  72% (625/868)   Receiving objects:  73% (634/868)   Receiving objects:  74% (643/868)   Receiving objects:  75% (651/868)   Receiving objects:  76% (660/868)   Receiving objects:  77% (669/868)   Receiving objects:  78% (678/868)   Receiving objects:  79% (686/868)   Receiving objects:  80% (695/868)   Receiving objects:  81% (704/868)   Receiving objects:  82% (712/868)   Receiving objects:  83% (721/868)   Receiving objects:  84% (730/868)   Receiving objects:  85% (738/868)   Receiving objects:  86% (747/868)   Receiving objects:  87% (756/868)   Receiving objects:  88% (764/868)   Receiving objects:  89% (773/868)   Receiving objects:  90% (782/868)   Receiving objects:  91% (790/868)   Receiving objects:  92% (799/868)   Receiving objects:  93% (808/868)   Receiving objects:  94% (816/868)   Receiving objects:  95% (825/868)   Receiving objects:  96% (834/868)   Receiving objects:  97% (842/868)   remote: Total 868 (delta 537), reused 729 (delta 431), pack-reused 0[K
+Receiving objects:  98% (851/868)   Receiving objects:  99% (860/868)   Receiving objects: 100% (868/868)   Receiving objects: 100% (868/868), 1.00 MiB | 0 bytes/s, done.
+Resolving deltas:   0% (0/537)   Resolving deltas:  15% (84/537)   Resolving deltas:  16% (86/537)   Resolving deltas:  17% (94/537)   Resolving deltas:  18% (102/537)   Resolving deltas:  19% (103/537)   Resolving deltas:  24% (133/537)   Resolving deltas:  26% (144/537)   Resolving deltas:  32% (175/537)   Resolving deltas:  33% (179/537)   Resolving deltas:  35% (193/537)   Resolving deltas:  37% (201/537)   Resolving deltas:  43% (236/537)   Resolving deltas:  44% (239/537)   Resolving deltas:  45% (245/537)   Resolving deltas:  46% (248/537)   Resolving deltas:  52% (280/537)   Resolving deltas:  53% (285/537)   Resolving deltas:  54% (293/537)   Resolving deltas:  57% (307/537)   Resolving deltas:  59% (317/537)   Resolving deltas:  60% (324/537)   Resolving deltas:  65% (354/537)   Resolving deltas:  66% (358/537)   Resolving deltas:  70% (378/537)   Resolving deltas:  71% (382/537)   Resolving deltas:  72% (392/537)   Resolving deltas:  73% (395/537)   Resolving deltas:  75% (403/537)   Resolving deltas:  76% (411/537)   Resolving deltas:  77% (414/537)   Resolving deltas:  78% (422/537)   Resolving deltas:  82% (444/537)   Resolving deltas:  83% (448/537)   Resolving deltas:  87% (469/537)   Resolving deltas:  88% (474/537)   Resolving deltas:  91% (490/537)   Resolving deltas: 100% (537/537)   Resolving deltas: 100% (537/537), done.
+Checking connectivity... done.
+travis_time:end:0488bb12:start=1585166923080399686,finish=1585166924060405132,duration=980005446,event=checkout[0K$ cd wpengine/phpcompat
+$ git checkout -qf e1ba446dec87e6c6432ee5af83c5bc0ed7cbc02b
+travis_fold:end:git.checkout[0K
+travis_time:end:0488bb12:start=1585166923080399686,finish=1585166924070345885,duration=989946199,event=checkout[0Ktravis_time:start:128438c7[0K
+[33;1mSetting environment variables from .travis.yml[0m
+$ export WP_VERSION=5.1
+
+travis_time:end:128438c7:start=1585166924072755605,finish=1585166924077820095,duration=5064490,event=env[0Ktravis_time:start:0547104a[0K$ phpenv global 5.2 2>/dev/null
+travis_time:end:0547104a:start=1585166924101444802,finish=1585166924121710461,duration=20265659,event=setup[0K[33;1m5.2 is not pre-installed; installing[0m
+[33;1mDownloading archive: https://storage.googleapis.com/travis-ci-language-archives/php/binaries/ubuntu/12.04/x86_64/php-5.2.tar.bz2[0m
+travis_time:start:065629e5[0K$ curl -sSf --retry 5 -o archive.tar.bz2 $archive_url && tar xjf archive.tar.bz2 --directory /
+travis_time:end:065629e5:start=1585166924169694599,finish=1585166926930223551,duration=2760528952,event=setup[0Ktravis_time:start:0305504d[0Ktravis_time:end:0305504d:start=1585166926932855333,finish=1585166926937634136,duration=4778803,event=setup[0Ktravis_time:start:10119818[0K$ phpenv global 5.2
+travis_time:end:10119818:start=1585166926940247643,finish=1585166926953989381,duration=13741738,event=setup[0K$ php --version
+PHP 5.2.17 (cli) (built: Dec  8 2014 00:53:32) 
+Copyright (c) 1997-2010 The PHP Group
+Zend Engine v2.2.0, Copyright (c) 1998-2010 Zend Technologies
+[0m
+travis_fold:start:before_script.1[0Ktravis_time:start:068a3744[0K$ stable='^[0-9\.]+$'
+  if [[ "$TRAVIS_PHP_VERSION" =~ $stable ]]; then
+    if [ -f ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/xdebug.ini ]; then
+      phpenv config-rm xdebug.ini
+    fi
+  fi
+  
+File xdebug.ini removed from /home/travis/.phpenv/versions/5.2/etc/conf.d.
+travis_time:end:068a3744:start=1585166927106034668,finish=1585166927144001222,duration=37966554,event=before_script[0Ktravis_fold:end:before_script.1[0Ktravis_fold:start:before_script.2[0Ktravis_time:start:0155fd80[0K$ if [[ "$NPM_TESTS" == "1" ]]; then
+    rm -rf ~/.nvm
+    git clone https://github.com/creationix/nvm.git ~/.nvm
+    cd ~/.nvm
+    git checkout `git describe --abbrev=0 --tags`
+    cd $TRAVIS_BUILD_DIR
+    source ~/.nvm/nvm.sh
+    nvm install 8
+    npm install
+  fi
+  
+travis_time:end:0155fd80:start=1585166927146785465,finish=1585166927148580223,duration=1794758,event=before_script[0Ktravis_fold:end:before_script.2[0Ktravis_fold:start:before_script.3[0Ktravis_time:start:00229058[0K$ export PATH="$HOME/.composer/vendor/bin:$PATH"
+travis_time:end:00229058:start=1585166927151197020,finish=1585166927155027527,duration=3830507,event=before_script[0Ktravis_fold:end:before_script.3[0Ktravis_fold:start:before_script.4[0Ktravis_time:start:0610fd8c[0K$ case "$TRAVIS_PHP_VERSION" in
+    5.6|5.5|5.4|5.3)
+      composer global require consolidation/cgr
+      PATH="$(composer config -g home)/vendor/bin:$PATH"
+      cgr "phpunit/phpunit:^4"
+      ;;
+    5.2)
+      ;;
+    *)
+      composer global require consolidation/cgr
+      PATH="$(composer config -g home)/vendor/bin:$PATH"
+      cgr "phpunit/phpunit:^6"
+      ;;
+  esac
+  
+travis_time:end:0610fd8c:start=1585166927157902264,finish=1585166927159770543,duration=1868279,event=before_script[0Ktravis_fold:end:before_script.4[0Ktravis_fold:start:before_script.5[0Ktravis_time:start:0586cdbc[0K$ if [[ "$TRAVIS_PHP_VERSION" == "5.2" ]]; then
+    phpenv global 5.4
+    composer install
+    phpenv global "$TRAVIS_PHP_VERSION"
+  else
+    composer install
+  fi
+  
+[30;43mWarning: This development build of composer is over 60 days old. It is recommended to update it by running "/home/travis/.phpenv/versions/5.4/bin/composer self-update" to get the latest version.[39;49m
+[32mLoading composer repositories with package information[39m
+[32mInstalling dependencies (including require-dev) from lock file[39m
+[37;41mYour requirements could not be resolved to an installable set of packages.[39;49m
+
+  Problem 1
+    - Installation request for doctrine/instantiator 1.3.0 -> satisfiable by doctrine/instantiator[1.3.0].
+    - doctrine/instantiator 1.3.0 requires php ^7.1 -> your PHP version (5.4.45) does not satisfy that requirement.
+  Problem 2
+    - Installation request for myclabs/deep-copy 1.9.5 -> satisfiable by myclabs/deep-copy[1.9.5].
+    - myclabs/deep-copy 1.9.5 requires php ^7.1 -> your PHP version (5.4.45) does not satisfy that requirement.
+  Problem 3
+    - Installation request for phar-io/manifest 1.0.3 -> satisfiable by phar-io/manifest[1.0.3].
+    - phar-io/manifest 1.0.3 requires php ^5.6 || ^7.0 -> your PHP version (5.4.45) does not satisfy that requirement.
+  Problem 4
+    - Installation request for phar-io/version 2.0.1 -> satisfiable by phar-io/version[2.0.1].
+    - phar-io/version 2.0.1 requires php ^5.6 || ^7.0 -> your PHP version (5.4.45) does not satisfy that requirement.
+  Problem 5
+    - Installation request for phpdocumentor/reflection-common 2.0.0 -> satisfiable by phpdocumentor/reflection-common[2.0.0].
+    - phpdocumentor/reflection-common 2.0.0 requires php >=7.1 -> your PHP version (5.4.45) does not satisfy that requirement.
+  Problem 6
+    - Installation request for phpdocumentor/reflection-docblock 5.1.0 -> satisfiable by phpdocumentor/reflection-docblock[5.1.0].
+    - phpdocumentor/reflection-docblock 5.1.0 requires ext-filter ^7.1 -> the requested PHP extension filter has the wrong version (0.11.0) installed.
+  Problem 7
+    - Installation request for phpdocumentor/type-resolver 1.1.0 -> satisfiable by phpdocumentor/type-resolver[1.1.0].
+    - phpdocumentor/type-resolver 1.1.0 requires php ^7.2 -> your PHP version (5.4.45) does not satisfy that requirement.
+  Problem 8
+    - Installation request for phpunit/php-code-coverage 8.0.1 -> satisfiable by phpunit/php-code-coverage[8.0.1].
+    - phpunit/php-code-coverage 8.0.1 requires php ^7.3 -> your PHP version (5.4.45) does not satisfy that requirement.
+  Problem 9
+    - Installation request for phpunit/php-file-iterator 3.0.0 -> satisfiable by phpunit/php-file-iterator[3.0.0].
+    - phpunit/php-file-iterator 3.0.0 requires php ^7.3 -> your PHP version (5.4.45) does not satisfy that requirement.
+  Problem 10
+    - Installation request for phpunit/php-invoker 3.0.0 -> satisfiable by phpunit/php-invoker[3.0.0].
+    - phpunit/php-invoker 3.0.0 requires php ^7.3 -> your PHP version (5.4.45) does not satisfy that requirement.
+  Problem 11
+    - Installation request for phpunit/php-text-template 2.0.0 -> satisfiable by phpunit/php-text-template[2.0.0].
+    - phpunit/php-text-template 2.0.0 requires php ^7.3 -> your PHP version (5.4.45) does not satisfy that requirement.
+  Problem 12
+    - Installation request for phpunit/php-timer 3.0.0 -> satisfiable by phpunit/php-timer[3.0.0].
+    - phpunit/php-timer 3.0.0 requires php ^7.3 -> your PHP version (5.4.45) does not satisfy that requirement.
+  Problem 13
+    - Installation request for phpunit/php-token-stream 4.0.0 -> satisfiable by phpunit/php-token-stream[4.0.0].
+    - phpunit/php-token-stream 4.0.0 requires php ^7.3 -> your PHP version (5.4.45) does not satisfy that requirement.
+  Problem 14
+    - Installation request for phpunit/phpunit 9.0.1 -> satisfiable by phpunit/phpunit[9.0.1].
+    - phpunit/phpunit 9.0.1 requires php ^7.3 -> your PHP version (5.4.45) does not satisfy that requirement.
+  Problem 15
+    - Installation request for sebastian/code-unit-reverse-lookup 2.0.0 -> satisfiable by sebastian/code-unit-reverse-lookup[2.0.0].
+    - sebastian/code-unit-reverse-lookup 2.0.0 requires php ^7.3 -> your PHP version (5.4.45) does not satisfy that requirement.
+  Problem 16
+    - Installation request for sebastian/comparator 4.0.0 -> satisfiable by sebastian/comparator[4.0.0].
+    - sebastian/comparator 4.0.0 requires php ^7.3 -> your PHP version (5.4.45) does not satisfy that requirement.
+  Problem 17
+    - Installation request for sebastian/diff 4.0.0 -> satisfiable by sebastian/diff[4.0.0].
+    - sebastian/diff 4.0.0 requires php ^7.3 -> your PHP version (5.4.45) does not satisfy that requirement.
+  Problem 18
+    - Installation request for sebastian/environment 5.0.1 -> satisfiable by sebastian/environment[5.0.1].
+    - sebastian/environment 5.0.1 requires php ^7.3 -> your PHP version (5.4.45) does not satisfy that requirement.
+  Problem 19
+    - Installation request for sebastian/exporter 4.0.0 -> satisfiable by sebastian/exporter[4.0.0].
+    - sebastian/exporter 4.0.0 requires php ^7.3 -> your PHP version (5.4.45) does not satisfy that requirement.
+  Problem 20
+    - Installation request for sebastian/global-state 4.0.0 -> satisfiable by sebastian/global-state[4.0.0].
+    - sebastian/global-state 4.0.0 requires php ^7.3 -> your PHP version (5.4.45) does not satisfy that requirement.
+  Problem 21
+    - Installation request for sebastian/object-enumerator 4.0.0 -> satisfiable by sebastian/object-enumerator[4.0.0].
+    - sebastian/object-enumerator 4.0.0 requires php ^7.3 -> your PHP version (5.4.45) does not satisfy that requirement.
+  Problem 22
+    - Installation request for sebastian/object-reflector 2.0.0 -> satisfiable by sebastian/object-reflector[2.0.0].
+    - sebastian/object-reflector 2.0.0 requires php ^7.3 -> your PHP version (5.4.45) does not satisfy that requirement.
+  Problem 23
+    - Installation request for sebastian/recursion-context 4.0.0 -> satisfiable by sebastian/recursion-context[4.0.0].
+    - sebastian/recursion-context 4.0.0 requires php ^7.3 -> your PHP version (5.4.45) does not satisfy that requirement.
+  Problem 24
+    - Installation request for sebastian/resource-operations 3.0.0 -> satisfiable by sebastian/resource-operations[3.0.0].
+    - sebastian/resource-operations 3.0.0 requires php ^7.3 -> your PHP version (5.4.45) does not satisfy that requirement.
+  Problem 25
+    - Installation request for sebastian/type 2.0.0 -> satisfiable by sebastian/type[2.0.0].
+    - sebastian/type 2.0.0 requires php ^7.3 -> your PHP version (5.4.45) does not satisfy that requirement.
+  Problem 26
+    - Installation request for sebastian/version 3.0.0 -> satisfiable by sebastian/version[3.0.0].
+    - sebastian/version 3.0.0 requires php ^7.3 -> your PHP version (5.4.45) does not satisfy that requirement.
+  Problem 27
+    - Installation request for theseer/tokenizer 1.1.3 -> satisfiable by theseer/tokenizer[1.1.3].
+    - theseer/tokenizer 1.1.3 requires php ^7.0 -> your PHP version (5.4.45) does not satisfy that requirement.
+  Problem 28
+    - doctrine/instantiator 1.3.0 requires php ^7.1 -> your PHP version (5.4.45) does not satisfy that requirement.
+    - phpspec/prophecy v1.10.3 requires doctrine/instantiator ^1.0.2 -> satisfiable by doctrine/instantiator[1.3.0].
+    - Installation request for phpspec/prophecy v1.10.3 -> satisfiable by phpspec/prophecy[v1.10.3].
+
+  To enable extensions, verify that they are enabled in your .ini files:
+    - /home/travis/.phpenv/versions/5.4.45/etc/php.ini
+    - /home/travis/.phpenv/versions/5.4.45/etc/conf.d/travis.ini
+    - /home/travis/.phpenv/versions/5.4.45/etc/conf.d/xdebug.ini
+  You can also run `php --ini` inside terminal to see which files are used by PHP in CLI mode.
+travis_time:end:0586cdbc:start=1585166927162423886,finish=1585166927492649534,duration=330225648,event=before_script[0Ktravis_fold:end:before_script.5[0Ktravis_fold:start:before_script.6[0Ktravis_time:start:0006d2e0[0K$ if [[ "$NPM_TESTS" != "1" ]]; then
+    tests/install-wp-tests.sh wordpress_tests travis "" localhost $WP_VERSION false
+    phpenv rehash
+  fi
+  
++install_wp
++'[' -d /tmp/wordpress/ ']'
++mkdir -p /tmp/wordpress/
++[[ 5.1 == \n\i\g\h\t\l\y ]]
++[[ 5.1 == \t\r\u\n\k ]]
++'[' 5.1 == latest ']'
++[[ 5.1 =~ [0-9]+\.[0-9]+ ]]
++download https://api.wordpress.org/core/version-check/1.7/ /tmp/wp-latest.json
+++which curl
++'[' /usr/bin/curl ']'
++curl -s https://api.wordpress.org/core/version-check/1.7/
++[[ 5.1 =~ [0-9]+\.[0-9]+\.[0] ]]
+++echo 5.1
+++sed 's/\./\\./g'
++local 'VERSION_ESCAPED=5\.1'
+++grep -o '"version":"5\.1[^"]*' /tmp/wp-latest.json
+++sed 's/"version":"//'
+++head -1
++LATEST_VERSION=5.1.4
++[[ -z 5.1.4 ]]
++local ARCHIVE_NAME=wordpress-5.1.4
++download https://wordpress.org/wordpress-5.1.4.tar.gz /tmp/wordpress.tar.gz
+++which curl
++'[' /usr/bin/curl ']'
++curl -s https://wordpress.org/wordpress-5.1.4.tar.gz
++tar --strip-components=1 -zxmf /tmp/wordpress.tar.gz -C /tmp/wordpress/
++download https://raw.github.com/markoheijnen/wp-mysqli/master/db.php /tmp/wordpress//wp-content/db.php
+++which curl
++'[' /usr/bin/curl ']'
++curl -s https://raw.github.com/markoheijnen/wp-mysqli/master/db.php
++install_test_suite
+++uname -s
++[[ Linux == \D\a\r\w\i\n ]]
++local ioption=-i
++'[' '!' -d /tmp/wordpress-tests-lib ']'
++mkdir -p /tmp/wordpress-tests-lib
++svn co --quiet https://develop.svn.wordpress.org/branches/5.1/tests/phpunit/includes/ /tmp/wordpress-tests-lib/includes
++svn co --quiet https://develop.svn.wordpress.org/branches/5.1/tests/phpunit/data/ /tmp/wordpress-tests-lib/data
++'[' '!' -f wp-tests-config.php ']'
++download https://develop.svn.wordpress.org/branches/5.1/wp-tests-config-sample.php /tmp/wordpress-tests-lib/wp-tests-config.php
+++which curl
++'[' /usr/bin/curl ']'
++curl -s https://develop.svn.wordpress.org/branches/5.1/wp-tests-config-sample.php
+++echo /tmp/wordpress/
+++sed 's:/\+$::'
++WP_CORE_DIR=/tmp/wordpress
++sed -i 's:dirname( __FILE__ ) . '\''/src/'\'':'\''/tmp/wordpress/'\'':' /tmp/wordpress-tests-lib/wp-tests-config.php
++sed -i s/youremptytestdbnamehere/wordpress_tests/ /tmp/wordpress-tests-lib/wp-tests-config.php
++sed -i s/yourusernamehere/travis/ /tmp/wordpress-tests-lib/wp-tests-config.php
++sed -i s/yourpasswordhere// /tmp/wordpress-tests-lib/wp-tests-config.php
++sed -i 's|localhost|localhost|' /tmp/wordpress-tests-lib/wp-tests-config.php
++install_db
++'[' false = true ']'
++PARTS=(${DB_HOST//\:/ })
++local PARTS
++local DB_HOSTNAME=localhost
++local DB_SOCK_OR_PORT=
++local EXTRA=
++'[' -z localhost ']'
+++echo
+++grep -e '^[0-9]\{1,\}$'
++'[' ']'
++'[' -z ']'
++'[' -z localhost ']'
++EXTRA=' --host=localhost --protocol=tcp'
++mysqladmin create wordpress_tests --user=travis --password= --host=localhost --protocol=tcp
+travis_time:end:0006d2e0:start=1585166927495407685,finish=1585166933019673205,duration=5524265520,event=before_script[0Ktravis_fold:end:before_script.6[0Ktravis_time:start:03bbfa6d[0K$ if [[ "$PHPCS" == "1" ]]; then
+  composer phpcs
+fi
+
+if [[ "$NPM_TESTS" == "1" ]]; then
+  npm test
+else
+  bash php-lint.sh
+  phpunit
+fi
+xargs: 
+Warning: Unexpected character in input:  '\' (ASCII=92) state=1 in ./tests/phpunit/phpunit6-compat.php on line 3
+
+Parse error: syntax error, unexpected T_STRING in ./tests/phpunit/phpunit6-compat.php on line 3
+Errors parsing ./tests/phpunit/phpunit6-compat.php
+php: exited with status 255; aborting
+
+Parse error: syntax error, unexpected T_FUNCTION in ./helpers/phpcompat_filters.php on line 3
+Errors parsing ./helpers/phpcompat_filters.php
+xargs: php: exited with status 255; aborting
+Installing...
+Running as single site... To run multisite, use -c tests/phpunit/multisite.xml
+
+Warning: require_once(/home/travis/build/wpengine/phpcompat/php52/vendor/autoload_52.php): failed to open stream: No such file or directory in /home/travis/build/wpengine/phpcompat/load-files.php on line 26
+
+Fatal error: require_once(): Failed opening required '/home/travis/build/wpengine/phpcompat/php52/vendor/autoload_52.php' (include_path='.:/home/travis/.phpenv/versions/5.2.17/pear') in /home/travis/build/wpengine/phpcompat/load-files.php on line 26
+travis_time:end:03bbfa6d:start=1585166933022588335,finish=1585166934266091659,duration=1243503324,event=script[0K[31;1mThe command "if [[ "$PHPCS" == "1" ]]; then
+  composer phpcs
+fi
+
+if [[ "$NPM_TESTS" == "1" ]]; then
+  npm test
+else
+  bash php-lint.sh
+  phpunit
+fi" exited with 255.[0m
+
+
+Done. Your build exited with 1.

@@ -1,0 +1,721 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: 91d27f12-a8fb-4b37-9c50-8743a04523be@1.worker-org-5f9bd8864f-pprng.gce-production-2
+version: v6.2.8 https://github.com/travis-ci/worker/tree/6d3048d96b26562be21fa1a8b8144f4c4cecd083
+instance: travis-job-6a98700e-ce5a-461c-9ecc-e18d204cd244 travis-ci-garnet-trusty-1512502259-986baf0 (via amqp)
+startup: 6.250565963s
+travis_fold:end:worker_info[0Ktravis_time:start:0c3cf3d8[0Ktravis_time:end:0c3cf3d8:start=1584979228813382080,finish=1584979228975243186,duration=161861106,event=no_world_writable_dirs[0Ktravis_time:start:06e2d391[0Ktravis_time:end:06e2d391:start=1584979228978405997,finish=1584979228987578623,duration=9172626,event=agent[0Ktravis_time:start:22799430[0Ktravis_time:end:22799430:start=1584979228990604253,finish=1584979228992658515,duration=2054262,event=check_unsupported[0Ktravis_time:start:03b89230[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: php
+Build dist: trusty
+Build id: 665934785
+Job id: 665934801
+Runtime kernel version: 4.4.0-101-generic
+travis-build version: 6c0f7380c
+[34m[1mBuild image provisioning date and time[0m
+Tue Dec  5 19:58:13 UTC 2017
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 14.04.5 LTS
+Release:	14.04
+Codename:	trusty
+[34m[1mCookbooks Version[0m
+7c2c6a6 https://github.com/travis-ci/travis-cookbooks/tree/7c2c6a6
+[34m[1mgit version[0m
+git version 2.15.1
+[34m[1mbash version[0m
+GNU bash, version 4.3.11(1)-release (x86_64-pc-linux-gnu)
+[34m[1mgcc version[0m
+gcc (Ubuntu 4.8.4-2ubuntu1~14.04.3) 4.8.4
+Copyright (C) 2013 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+[34m[1mdocker version[0m
+Client:
+ Version:      17.09.0-ce
+ API version:  1.32
+ Go version:   go1.8.3
+ Git commit:   afdb6d4
+ Built:        Tue Sep 26 22:42:38 2017
+ OS/Arch:      linux/amd64
+
+Server:
+ Version:      17.09.0-ce
+ API version:  1.32 (minimum version 1.12)
+ Go version:   go1.8.3
+ Git commit:   afdb6d4
+ Built:        Tue Sep 26 22:41:20 2017
+ OS/Arch:      linux/amd64
+ Experimental: false
+[34m[1mclang version[0m
+clang version 5.0.0 (tags/RELEASE_500/final)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /usr/local/clang-5.0.0/bin
+[34m[1mjq version[0m
+jq-1.5
+[34m[1mbats version[0m
+Bats 0.4.0
+[34m[1mshellcheck version[0m
+0.4.6
+[34m[1mshfmt version[0m
+v2.0.0
+[34m[1mccache version[0m
+ccache version 3.1.9
+
+Copyright (C) 2002-2007 Andrew Tridgell
+Copyright (C) 2009-2011 Joel Rosdahl
+
+This program is free software; you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation; either version 3 of the License, or (at your option) any later
+version.
+[34m[1mcmake version[0m
+cmake version 3.9.2
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+[34m[1mheroku version[0m
+heroku-cli/6.14.39-addc925 (linux-x64) node-v9.2.0
+[34m[1mimagemagick version[0m
+Version: ImageMagick 6.7.7-10 2017-07-31 Q16 http://www.imagemagick.org
+[34m[1mmd5deep version[0m
+4.2
+[34m[1mmercurial version[0m
+Mercurial Distributed SCM (version 4.2.2)
+(see https://mercurial-scm.org for more information)
+
+Copyright (C) 2005-2017 Matt Mackall and others
+This is free software; see the source for copying conditions. There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+[34m[1mmysql version[0m
+mysql  Ver 14.14 Distrib 5.6.33, for debian-linux-gnu (x86_64) using  EditLine wrapper
+[34m[1mopenssl version[0m
+OpenSSL 1.0.1f 6 Jan 2014
+[34m[1mpacker version[0m
+Packer v1.0.2
+
+Your version of Packer is out of date! The latest version
+is 1.1.2. You can update by downloading from www.packer.io
+[34m[1mpostgresql client version[0m
+psql (PostgreSQL) 9.6.6
+[34m[1mragel version[0m
+Ragel State Machine Compiler version 6.8 Feb 2013
+Copyright (c) 2001-2009 by Adrian Thurston
+[34m[1msubversion version[0m
+svn, version 1.8.8 (r1568071)
+   compiled Aug 10 2017, 17:20:39 on x86_64-pc-linux-gnu
+
+Copyright (C) 2013 The Apache Software Foundation.
+This software consists of contributions made by many people;
+see the NOTICE file for more information.
+Subversion is open source software, see http://subversion.apache.org/
+
+The following repository access (RA) modules are available:
+
+* ra_svn : Module for accessing a repository using the svn network protocol.
+  - with Cyrus SASL authentication
+  - handles 'svn' scheme
+* ra_local : Module for accessing a repository on local disk.
+  - handles 'file' scheme
+* ra_serf : Module for accessing a repository via WebDAV protocol using serf.
+  - using serf 1.3.3
+  - handles 'http' scheme
+  - handles 'https' scheme
+
+[34m[1msudo version[0m
+Sudo version 1.8.9p5
+Configure options: --prefix=/usr -v --with-all-insults --with-pam --with-fqdn --with-logging=syslog --with-logfac=authpriv --with-env-editor --with-editor=/usr/bin/editor --with-timeout=15 --with-password-timeout=0 --with-passprompt=[sudo] password for %p:  --without-lecture --with-tty-tickets --disable-root-mailer --enable-admin-flag --with-sendmail=/usr/sbin/sendmail --with-timedir=/var/lib/sudo --mandir=/usr/share/man --libexecdir=/usr/lib/sudo --with-sssd --with-sssd-lib=/usr/lib/x86_64-linux-gnu --with-selinux
+Sudoers policy plugin version 1.8.9p5
+Sudoers file grammar version 43
+
+Sudoers path: /etc/sudoers
+Authentication methods: 'pam'
+Syslog facility if syslog is being used for logging: authpriv
+Syslog priority to use when user authenticates successfully: notice
+Syslog priority to use when user authenticates unsuccessfully: alert
+Send mail if the user is not in sudoers
+Use a separate timestamp for each user/tty combo
+Lecture user the first time they run sudo
+Root may run sudo
+Allow some information gathering to give useful error messages
+Require fully-qualified hostnames in the sudoers file
+Visudo will honor the EDITOR environment variable
+Set the LOGNAME and USER environment variables
+Length at which to wrap log file lines (0 for no wrap): 80
+Authentication timestamp timeout: 15.0 minutes
+Password prompt timeout: 0.0 minutes
+Number of tries to enter a password: 3
+Umask to use or 0777 to use user's: 022
+Path to mail program: /usr/sbin/sendmail
+Flags for mail program: -t
+Address to send mail to: root
+Subject line for mail messages: *** SECURITY information for %h ***
+Incorrect password message: Sorry, try again.
+Path to authentication timestamp dir: /var/lib/sudo
+Default password prompt: [sudo] password for %p: 
+Default user to run commands as: root
+Value to override user's $PATH with: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+Path to the editor for use by visudo: /usr/bin/editor
+When to require a password for 'list' pseudocommand: any
+When to require a password for 'verify' pseudocommand: all
+File descriptors >= 3 will be closed before executing a command
+Environment variables to check for sanity:
+	TZ
+	TERM
+	LINGUAS
+	LC_*
+	LANGUAGE
+	LANG
+	COLORTERM
+Environment variables to remove:
+	RUBYOPT
+	RUBYLIB
+	PYTHONUSERBASE
+	PYTHONINSPECT
+	PYTHONPATH
+	PYTHONHOME
+	TMPPREFIX
+	ZDOTDIR
+	READNULLCMD
+	NULLCMD
+	FPATH
+	PERL5DB
+	PERL5OPT
+	PERL5LIB
+	PERLLIB
+	PERLIO_DEBUG 
+	JAVA_TOOL_OPTIONS
+	SHELLOPTS
+	GLOBIGNORE
+	PS4
+	BASH_ENV
+	ENV
+	TERMCAP
+	TERMPATH
+	TERMINFO_DIRS
+	TERMINFO
+	_RLD*
+	LD_*
+	PATH_LOCALE
+	NLSPATH
+	HOSTALIASES
+	RES_OPTIONS
+	LOCALDOMAIN
+	CDPATH
+	IFS
+Environment variables to preserve:
+	JAVA_HOME
+	TRAVIS
+	CI
+	DEBIAN_FRONTEND
+	XAUTHORIZATION
+	XAUTHORITY
+	PS2
+	PS1
+	PATH
+	LS_COLORS
+	KRB5CCNAME
+	HOSTNAME
+	HOME
+	DISPLAY
+	COLORS
+Locale to use while parsing sudoers: C
+Directory in which to store input/output logs: /var/log/sudo-io
+File in which to store the input/output log: %{seq}
+Add an entry to the utmp/utmpx file when allocating a pty
+PAM service name to use
+PAM service name to use for login shells
+Create a new PAM session for the command to run in
+Maximum I/O log sequence number: 0
+
+Local IP address and netmask pairs:
+	10.240.0.28/255.255.255.255
+	172.17.0.1/255.255.0.0
+
+Sudoers I/O plugin version 1.8.9p5
+[34m[1mgzip version[0m
+gzip 1.6
+Copyright (C) 2007, 2010, 2011 Free Software Foundation, Inc.
+Copyright (C) 1993 Jean-loup Gailly.
+This is free software.  You may redistribute copies of it under the terms of
+the GNU General Public License <http://www.gnu.org/licenses/gpl.html>.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by Jean-loup Gailly.
+[34m[1mzip version[0m
+Copyright (c) 1990-2008 Info-ZIP - Type 'zip "-L"' for software license.
+This is Zip 3.0 (July 5th 2008), by Info-ZIP.
+Currently maintained by E. Gordon.  Please send bug reports to
+the authors using the web page at www.info-zip.org; see README for details.
+
+Latest sources and executables are at ftp://ftp.info-zip.org/pub/infozip,
+as of above date; see http://www.info-zip.org/ for other sites.
+
+Compiled with gcc 4.8.2 for Unix (Linux ELF) on Oct 21 2013.
+
+Zip special compilation options:
+	USE_EF_UT_TIME       (store Universal Time)
+	BZIP2_SUPPORT        (bzip2 library version 1.0.6, 6-Sept-2010)
+	    bzip2 code and library copyright (c) Julian R Seward
+	    (See the bzip2 license for terms of use)
+	SYMLINK_SUPPORT      (symbolic links supported)
+	LARGE_FILE_SUPPORT   (can read and write large files on file system)
+	ZIP64_SUPPORT        (use Zip64 to store large files in archives)
+	UNICODE_SUPPORT      (store and read UTF-8 Unicode paths)
+	STORE_UNIX_UIDs_GIDs (store UID/GID sizes/values using new extra field)
+	UIDGID_NOT_16BIT     (old Unix 16-bit UID/GID extra field not used)
+	[encryption, version 2.91 of 05 Jan 2007] (modified for Zip 3)
+
+Encryption notice:
+	The encryption code of this program is not copyrighted and is
+	put in the public domain.  It was originally written in Europe
+	and, to the best of our knowledge, can be freely distributed
+	in both source and object forms from any country, including
+	the USA under License Exception TSU of the U.S. Export
+	Administration Regulations (section 740.13(e)) of 6 June 2002.
+
+Zip environment options:
+             ZIP:  [none]
+          ZIPOPT:  [none]
+[34m[1mvim version[0m
+VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Nov 24 2016 16:43:18)
+Included patches: 1-52
+Extra patches: 8.0.0056
+Modified by pkg-vim-maintainers@lists.alioth.debian.org
+Compiled by buildd@
+Huge version without GUI.  Features included (+) or not (-):
++acl             +farsi           +mouse_netterm   +syntax
++arabic          +file_in_path    +mouse_sgr       +tag_binary
++autocmd         +find_in_path    -mouse_sysmouse  +tag_old_static
+-balloon_eval    +float           +mouse_urxvt     -tag_any_white
+-browse          +folding         +mouse_xterm     -tcl
+++builtin_terms  -footer          +multi_byte      +terminfo
++byte_offset     +fork()          +multi_lang      +termresponse
++cindent         +gettext         -mzscheme        +textobjects
+-clientserver    -hangul_input    +netbeans_intg   +title
+-clipboard       +iconv           +path_extra      -toolbar
++cmdline_compl   +insert_expand   -perl            +user_commands
++cmdline_hist    +jumplist        +persistent_undo +vertsplit
++cmdline_info    +keymap          +postscript      +virtualedit
++comments        +langmap         +printer         +visual
++conceal         +libcall         +profile         +visualextra
++cryptv          +linebreak       +python          +viminfo
++cscope          +lispindent      -python3         +vreplace
++cursorbind      +listcmds        +quickfix        +wildignore
++cursorshape     +localmap        +reltime         +wildmenu
++dialog_con      -lua             +rightleft       +windows
++diff            +menu            -ruby            +writebackup
++digraphs        +mksession       +scrollbind      -X11
+-dnd             +modify_fname    +signs           -xfontset
+-ebcdic          +mouse           +smartindent     -xim
++emacs_tags      -mouseshape      -sniff           -xsmp
++eval            +mouse_dec       +startuptime     -xterm_clipboard
++ex_extra        +mouse_gpm       +statusline      -xterm_save
++extra_search    -mouse_jsbterm   -sun_workshop    -xpm
+   system vimrc file: "$VIM/vimrc"
+     user vimrc file: "$HOME/.vimrc"
+ 2nd user vimrc file: "~/.vim/vimrc"
+      user exrc file: "$HOME/.exrc"
+  fall-back for $VIM: "/usr/share/vim"
+Compilation: gcc -c -I. -Iproto -DHAVE_CONFIG_H     -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1      
+Linking: gcc   -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,--as-needed -o vim        -lm -ltinfo -lnsl  -lselinux  -lacl -lattr -lgpm -ldl    -L/usr/lib/python2.7/config-x86_64-linux-gnu -lpython2.7 -lpthread -ldl -lutil -lm -Xlinker -export-dynamic -Wl,-O1 -Wl,-Bsymbolic-functions      
+[34m[1miptables version[0m
+iptables v1.4.21
+[34m[1mcurl version[0m
+curl 7.35.0 (x86_64-pc-linux-gnu) libcurl/7.35.0 OpenSSL/1.0.1f zlib/1.2.8 libidn/1.28 librtmp/2.3
+[34m[1mwget version[0m
+GNU Wget 1.15 built on linux-gnu.
+[34m[1mrsync version[0m
+rsync  version 3.1.0  protocol version 31
+[34m[1mgimme version[0m
+v1.2.0
+[34m[1mnvm version[0m
+0.33.6
+[34m[1mperlbrew version[0m
+/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.80
+[34m[1mphpenv version[0m
+rbenv 1.1.1-25-g6aa70b6
+[34m[1mrvm version[0m
+rvm 1.29.3 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+[34m[1mdefault ruby version[0m
+ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
+[34m[1mCouchDB version[0m
+couchdb 1.6.1
+[34m[1mElasticSearch version[0m
+5.5.0
+[34m[1mInstalled Firefox version[0m
+firefox 56.0.2
+[34m[1mMongoDB version[0m
+MongoDB 3.4.10
+[34m[1mPhantomJS version[0m
+2.1.1
+[34m[1mPre-installed PostgreSQL versions[0m
+9.2.24
+9.3.20
+9.4.15
+9.5.10
+9.6.6
+[34m[1mRabbitMQ Version[0m
+3.6.14
+[34m[1mRedis version[0m
+redis-server 4.0.6
+[34m[1mriak version[0m
+2.2.3
+[34m[1mPre-installed Go versions[0m
+1.7.4
+[34m[1mant version[0m
+Apache Ant(TM) version 1.9.3 compiled on April 8 2014
+[34m[1mmvn version[0m
+Apache Maven 3.5.2 (138edd61fd100ec658bfa2d307c43b76940a5d7d; 2017-10-18T07:58:13Z)
+Maven home: /usr/local/maven-3.5.2
+Java version: 1.8.0_151, vendor: Oracle Corporation
+Java home: /usr/lib/jvm/java-8-oracle/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "4.4.0-98-generic", arch: "amd64", family: "unix"
+[34m[1mgradle version[0m
+
+------------------------------------------------------------
+Gradle 4.0.1
+------------------------------------------------------------
+
+Build time:   2017-07-07 14:02:41 UTC
+Revision:     38e5dc0f772daecca1d2681885d3d85414eb6826
+
+Groovy:       2.4.11
+Ant:          Apache Ant(TM) version 1.9.6 compiled on June 29 2015
+JVM:          1.8.0_151 (Oracle Corporation 25.151-b12)
+OS:           Linux 4.4.0-98-generic amd64
+
+[34m[1mlein version[0m
+Leiningen 2.8.1 on Java 1.8.0_151 Java HotSpot(TM) 64-Bit Server VM
+[34m[1mPre-installed Node.js versions[0m
+v4.8.6
+v6.12.0
+v6.12.1
+v8.9
+v8.9.1
+[34m[1mphpenv versions[0m
+  system
+  5.6
+* 5.6.32 (set by /home/travis/.phpenv/version)
+  7.0
+  7.0.25
+  7.1
+  7.1.11
+  hhvm
+  hhvm-stable
+[34m[1mcomposer --version[0m
+Composer version 1.5.2 2017-09-11 16:59:25
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.2.7
+ruby-2.3.4
+ruby-2.4.1
+travis_fold:end:system_info[0K
+travis_time:end:03b89230:start=1584979228995690121,finish=1584979229001380010,duration=5689889,event=show_system_info[0Ktravis_time:start:049e69e9[0Ktravis_time:end:049e69e9:start=1584979229004186907,finish=1584979229026168950,duration=21982043,event=rm_riak_source[0Ktravis_time:start:02508510[0Ktravis_time:end:02508510:start=1584979229029287170,finish=1584979229037348869,duration=8061699,event=fix_rwky_redis[0Ktravis_time:start:18b64b9d[0Ktravis_time:end:18b64b9d:start=1584979229040959492,finish=1584979229418147320,duration=377187828,event=wait_for_network[0Ktravis_time:start:0033e75a[0Ktravis_time:end:0033e75a:start=1584979229421349057,finish=1584979230926997914,duration=1505648857,event=update_apt_keys[0Ktravis_time:start:00fbe8a8[0Ktravis_time:end:00fbe8a8:start=1584979230929862571,finish=1584979231848070051,duration=918207480,event=fix_hhvm_source[0Ktravis_time:start:134dc3de[0Ktravis_time:end:134dc3de:start=1584979231851106314,finish=1584979231859232624,duration=8126310,event=update_mongo_arch[0Ktravis_time:start:00ac590e[0Ktravis_time:end:00ac590e:start=1584979231861753307,finish=1584979231895330879,duration=33577572,event=fix_sudo_enabled_trusty[0Ktravis_time:start:01576122[0Ktravis_time:end:01576122:start=1584979231898152483,finish=1584979231900193628,duration=2041145,event=update_glibc[0Ktravis_time:start:10e1c250[0Ktravis_time:end:10e1c250:start=1584979231903311827,finish=1584979231910346815,duration=7034988,event=clean_up_path[0Ktravis_time:start:06dbc6e8[0Ktravis_time:end:06dbc6e8:start=1584979231912839196,finish=1584979231919564098,duration=6724902,event=fix_resolv_conf[0Ktravis_time:start:0aca5f1c[0Ktravis_time:end:0aca5f1c:start=1584979231922029045,finish=1584979231929467847,duration=7438802,event=fix_etc_hosts[0Ktravis_time:start:22b67d66[0Ktravis_time:end:22b67d66:start=1584979231932019119,finish=1584979231938988478,duration=6969359,event=fix_mvn_settings_xml[0Ktravis_time:start:03552340[0Ktravis_time:end:03552340:start=1584979231941517776,finish=1584979231949505652,duration=7987876,event=no_ipv6_localhost[0Ktravis_time:start:043baa00[0Ktravis_time:end:043baa00:start=1584979231952039985,finish=1584979231953884560,duration=1844575,event=fix_etc_mavenrc[0Ktravis_time:start:318cafff[0Ktravis_time:end:318cafff:start=1584979231956353470,finish=1584979231958870780,duration=2517310,event=fix_wwdr_certificate[0Ktravis_time:start:00b5b8f6[0Ktravis_time:end:00b5b8f6:start=1584979231961309680,finish=1584979231982401169,duration=21091489,event=put_localhost_first[0Ktravis_time:start:330d3a10[0Ktravis_time:end:330d3a10:start=1584979231985103099,finish=1584979231988231525,duration=3128426,event=home_paths[0Ktravis_time:start:0a365e08[0Ktravis_time:end:0a365e08:start=1584979231990912793,finish=1584979232000569624,duration=9656831,event=disable_initramfs[0Ktravis_time:start:24106df0[0Ktravis_time:end:24106df0:start=1584979232003315854,finish=1584979232260939689,duration=257623835,event=disable_ssh_roaming[0Ktravis_time:start:0355435b[0Ktravis_time:end:0355435b:start=1584979232263939910,finish=1584979232266000641,duration=2060731,event=debug_tools[0Ktravis_time:start:2f20e954[0Ktravis_time:end:2f20e954:start=1584979232268913194,finish=1584979232271766150,duration=2852956,event=uninstall_oclint[0Ktravis_time:start:0f19ac3a[0Ktravis_time:end:0f19ac3a:start=1584979232274573276,finish=1584979232277287794,duration=2714518,event=rvm_use[0Ktravis_time:start:0e4977a0[0Ktravis_time:end:0e4977a0:start=1584979232280056009,finish=1584979232287361015,duration=7305006,event=rm_etc_boto_cfg[0Ktravis_time:start:0baff000[0Ktravis_time:end:0baff000:start=1584979232289955355,finish=1584979232292007190,duration=2051835,event=rm_oraclejdk8_symlink[0Ktravis_time:start:00f48ba1[0Ktravis_time:end:00f48ba1:start=1584979232294751596,finish=1584979232340402563,duration=45650967,event=enable_i386[0Ktravis_time:start:0492449a[0Ktravis_time:end:0492449a:start=1584979232343229513,finish=1584979232346936005,duration=3706492,event=update_rubygems[0Ktravis_time:start:10cd34f0[0Ktravis_time:end:10cd34f0:start=1584979232349686056,finish=1584979233205690845,duration=856004789,event=ensure_path_components[0Ktravis_time:start:0c1d05fb[0Ktravis_time:end:0c1d05fb:start=1584979233208835075,finish=1584979233211053853,duration=2218778,event=redefine_curl[0Ktravis_time:start:0f2224aa[0Ktravis_time:end:0f2224aa:start=1584979233213821745,finish=1584979233215856729,duration=2034984,event=nonblock_pipe[0Ktravis_time:start:19333c00[0Ktravis_time:end:19333c00:start=1584979233218542423,finish=1584979239249092843,duration=6030550420,event=apt_get_update[0Ktravis_time:start:0a6a0f38[0Ktravis_time:end:0a6a0f38:start=1584979239252131583,finish=1584979239254160283,duration=2028700,event=deprecate_xcode_64[0Ktravis_time:start:0295c77c[0Ktravis_time:end:0295c77c:start=1584979239256766581,finish=1584979243012438267,duration=3755671686,event=update_heroku[0Ktravis_time:start:015d7ccc[0Ktravis_time:end:015d7ccc:start=1584979243015409717,finish=1584979243017446001,duration=2036284,event=shell_session_update[0Ktravis_time:start:2e59c516[0Ktravis_fold:start:docker_mtu[0Kdocker stop/waiting
+docker start/running, process 3860
+travis_fold:end:docker_mtu[0Ktravis_time:end:2e59c516:start=1584979243020118022,finish=1584979244197282385,duration=1177164363,event=set_docker_mtu[0Ktravis_time:start:01e9999a[0Ktravis_fold:start:resolvconf[0Kresolvconf stop/waiting
+resolvconf start/running
+travis_fold:end:resolvconf[0Ktravis_time:end:01e9999a:start=1584979244200422737,finish=1584979244256245453,duration=55822716,event=resolvconf[0Ktravis_time:start:103dba98[0Ktravis_time:end:103dba98:start=1584979244259281924,finish=1584979244340478689,duration=81196765,event=maven_central_mirror[0Ktravis_time:start:30279743[0Ktravis_time:end:30279743:start=1584979244343411480,finish=1584979244405550436,duration=62138956,event=maven_https[0Ktravis_time:start:0d956c34[0Ktravis_time:end:0d956c34:start=1584979244408771046,finish=1584979244410879678,duration=2108632,event=fix_ps4[0Ktravis_time:start:05189c8e[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:06af0d2b[0K$ git clone --depth=50 https://github.com/wpengine/phpcompat.git wpengine/phpcompat
+Cloning into 'wpengine/phpcompat'...
+remote: Enumerating objects: 825, done.[K
+remote: Counting objects:   0% (1/825)[Kremote: Counting objects:   1% (9/825)[Kremote: Counting objects:   2% (17/825)[Kremote: Counting objects:   3% (25/825)[Kremote: Counting objects:   4% (33/825)[Kremote: Counting objects:   5% (42/825)[Kremote: Counting objects:   6% (50/825)[Kremote: Counting objects:   7% (58/825)[Kremote: Counting objects:   8% (66/825)[Kremote: Counting objects:   9% (75/825)[Kremote: Counting objects:  10% (83/825)[Kremote: Counting objects:  11% (91/825)[Kremote: Counting objects:  12% (99/825)[Kremote: Counting objects:  13% (108/825)remote: Counting objects:  14% (116/825)[Kremote: Counting objects:  15% (124/825)[Kremote: Counting objects:  16% (132/825)[Kremote: Counting objects:  17% (141/825)[Kremote: Counting objects:  18% (149/825)[Kremote: Counting objects:  19% (157/825)[Kremote: Counting objects:  20% (165/825)[Kremote: Counting objects:  21% (174/825)[Kremote: Counting objects:  22% (182/825)[Kremote: Counting objects:  23% (190/825)[Kremote: Counting objects:  24% (198/825)[Kremote: Counting objects:  25% (207/825)[Kremote: Counting objects:  26% (215/825)[Kremote: Counting objects:  27% (223/825)[Kremote: Counting objects:  28% (231/825)[Kremote: Counting objects:  29% (240/825)[Kremote: Counting objects:  30% (248/825)[Kremote: Counting objects:  31% (256/825)[Kremote: Counting objects:  32% (264/825)[Kremote: Counting objects:  33% (273/825)[Kremote: Counting objects:  34% (281/825)[Kremote: Counting objects:  35% (289/825)[Kremote: Counting objects:  36% (297/825)[Kremote: Counting objects:  37% (306/825)[Kremote: Counting objects:  38% (314/825)[Kremote: Counting objects:  39% (322/825)[Kremote: Counting objects:  40% (330/825)[Kremote: Counting objects:  41% (339/825)[Kremote: Counting objects:  42% (347/825)[Kremote: Counting objects:  43% (355/825)[Kremote: Counting objects:  44% (363/825)[Kremote: Counting objects:  45% (372/825)[Kremote: Counting objects:  46% (380/825)[Kremote: Counting objects:  47% (388/825)[Kremote: Counting objects:  48% (396/825)[Kremote: Counting objects:  49% (405/825)[Kremote: Counting objects:  50% (413/825)[Kremote: Counting objects:  51% (421/825)[Kremote: Counting objects:  52% (429/825)[Kremote: Counting objects:  53% (438/825)[Kremote: Counting objects:  54% (446/825)[Kremote: Counting objects:  55% (454/825)[Kremote: Counting objects:  56% (462/825)[Kremote: Counting objects:  57% (471/825)[Kremote: Counting objects:  58% (479/825)[Kremote: Counting objects:  59% (487/825)[Kremote: Counting objects:  60% (495/825)[Kremote: Counting objects:  61% (504/825)[Kremote: Counting objects:  62% (512/825)[Kremote: Counting objects:  63% (520/825)[Kremote: Counting objects:  64% (528/825)[Kremote: Counting objects:  65% (537/825)[Kremote: Counting objects:  66% (545/825)[Kremote: Counting objects:  67% (553/825)[Kremote: Counting objects:  68% (561/825)[Kremote: Counting objects:  69% (570/825)[Kremote: Counting objects:  70% (578/825)[Kremote: Counting objects:  71% (586/825)[Kremote: Counting objects:  72% (594/825)[Kremote: Counting objects:  73% (603/825)[Kremote: Counting objects:  74% (611/825)[Kremote: Counting objects:  75% (619/825)[Kremote: Counting objects:  76% (627/825)[Kremote: Counting objects:  77% (636/825)[Kremote: Counting objects:  78% (644/825)[Kremote: Counting objects:  79% (652/825)[Kremote: Counting objects:  80% (660/825)[Kremote: Counting objects:  81% (669/825)[Kremote: Counting objects:  82% (677/825)[Kremote: Counting objects:  83% (685/825)[Kremote: Counting objects:  84% (693/825)[Kremote: Counting objects:  85% (702/825)[Kremote: Counting objects:  86% (710/825)[Kremote: Counting objects:  87% (718/825)[Kremote: Counting objects:  88% (726/825)[Kremote: Counting objects:  89% (735/825)[Kremote: Counting objects:  90% (743/825)[Kremote: Counting objects:  91% (751/825)[Kremote: Counting objects:  92% (759/825)[Kremote: Counting objects:  93% (768/825)[Kremote: Counting objects:  94% (776/825)[Kremote: Counting objects:  95% (784/825)[Kremote: Counting objects:  96% (792/825)[Kremote: Counting objects:  97% (801/825)[Kremote: Counting objects:  98% (809/825)[Kremote: Counting objects:  99% (817/825)[Kremote: Counting objects: 100% (825/825)[Kremote: Counting objects: 100% (825/825), done.[K
+remote: Compressing objects:   0% (1/408)[Kremote: Compressing objects:   1% (5/408)[Kremote: Compressing objects:   2% (9/408)[Kremote: Compressing objects:   3% (13/408)[Kremote: Compressing objects:   4% (17/408)[Kremote: Compressing objects:   5% (21/408)[Kremote: Compressing objects:   6% (25/408)[Kremote: Compressing objects:   7% (29/408)[Kremote: Compressing objects:   8% (33/408)[Kremote: Compressing objects:   9% (37/408)[Kremote: Compressing objects:  10% (41/408)[Kremote: Compressing objects:  11% (45/408)[Kremote: Compressing objects:  12% (49/408)[Kremote: Compressing objects:  13% (54/408)[Kremote: Compressing objects:  14% (58/408)[Kremote: Compressing objects:  15% (62/408)[Kremote: Compressing objects:  16% (66/408)[Kremote: Compressing objects:  17% (70/408)[Kremote: Compressing objects:  18% (74/408)[Kremote: Compressing objects:  19% (78/408)[Kremote: Compressing objects:  20% (82/408)[Kremote: Compressing objects:  21% (86/408)[Kremote: Compressing objects:  22% (90/408)[Kremote: Compressing objects:  23% (94/408)[Kremote: Compressing objects:  24% (98/408)[Kremote: Compressing objects:  25% (102/408)[Kremote: Compressing objects:  26% (107/408)[Kremote: Compressing objects:  27% (111/408)[Kremote: Compressing objects:  28% (115/408)[Kremote: Compressing objects:  29% (119/408)[Kremote: Compressing objects:  30% (123/408)[Kremote: Compressing objects:  31% (127/408)[Kremote: Compressing objects:  32% (131/408)[Kremote: Compressing objects:  33% (135/408)[Kremote: Compressing objects:  34% (139/408)[Kremote: Compressing objects:  35% (143/408)[Kremote: Compressing objects:  36% (147/408)[Kremote: Compressing objects:  37% (151/408)[Kremote: Compressing objects:  38% (156/408)[Kremote: Compressing objects:  39% (160/408)[Kremote: Compressing objects:  40% (164/408)[Kremote: Compressing objects:  41% (168/408)[Kremote: Compressing objects:  42% (172/408)[Kremote: Compressing objects:  43% (176/408)[Kremote: Compressing objects:  44% (180/408)[Kremote: Compressing objects:  45% (184/408)[Kremote: Compressing objects:  46% (188/408)[Kremote: Compressing objects:  47% (192/408)[Kremote: Compressing objects:  48% (196/408)[Kremote: Compressing objects:  49% (200/408)[Kremote: Compressing objects:  50% (204/408)[Kremote: Compressing objects:  51% (209/408)[Kremote: Compressing objects:  52% (213/408)[Kremote: Compressing objects:  53% (217/408)[Kremote: Compressing objects:  54% (221/408)[Kremote: Compressing objects:  55% (225/408)[Kremote: Compressing objects:  56% (229/408)[Kremote: Compressing objects:  57% (233/408)[Kremote: Compressing objects:  58% (237/408)[Kremote: Compressing objects:  59% (241/408)[Kremote: Compressing objects:  60% (245/408)[Kremote: Compressing objects:  61% (249/408)[Kremote: Compressing objects:  62% (253/408)[Kremote: Compressing objects:  63% (258/408)[Kremote: Compressing objects:  64% (262/408)[Kremote: Compressing objects:  65% (266/408)[Kremote: Compressing objects:  66% (270/408)[Kremote: Compressing objects:  67% (274/408)[Kremote: Compressing objects:  68% (278/408)[Kremote: Compressing objects:  69% (282/408)[Kremote: Compressing objects:  70% (286/408)[Kremote: Compressing objects:  71% (290/408)[Kremote: Compressing objects:  72% (294/408)[Kremote: Compressing objects:  73% (298/408)[Kremote: Compressing objects:  74% (302/408)[Kremote: Compressing objects:  75% (306/408)[Kremote: Compressing objects:  76% (311/408)[Kremote: Compressing objects:  77% (315/408)[Kremote: Compressing objects:  78% (319/408)[Kremote: Compressing objects:  79% (323/408)[Kremote: Compressing objects:  80% (327/408)[Kremote: Compressing objects:  81% (331/408)[Kremote: Compressing objects:  82% (335/408)[Kremote: Compressing objects:  83% (339/408)[Kremote: Compressing objects:  84% (343/408)[Kremote: Compressing objects:  85% (347/408)[Kremote: Compressing objects:  86% (351/408)[Kremote: Compressing objects:  87% (355/408)[Kremote: Compressing objects:  88% (360/408)[Kremote: Compressing objects:  89% (364/408)[Kremote: Compressing objects:  90% (368/408)[Kremote: Compressing objects:  91% (372/408)[Kremote: Compressing objects:  92% (376/408)[Kremote: Compressing objects:  93% (380/408)[Kremote: Compressing objects:  94% (384/408)[Kremote: Compressing objects:  95% (388/408)[Kremote: Compressing objects:  96% (392/408)[Kremote: Compressing objects:  97% (396/408)[Kremote: Compressing objects:  98% (400/408)[Kremote: Compressing objects:  99% (404/408)[Kremote: Compressing objects: 100% (408/408)[Kremote: Compressing objects: 100% (408/408), done.[K
+Receiving objects:   0% (1/825)   Receiving objects:   1% (9/825)   Receiving objects:   2% (17/825)   Receiving objects:   3% (25/825)   Receiving objects:   4% (33/825)   Receiving objects:   5% (42/825)   Receiving objects:   6% (50/825)   Receiving objects:   7% (58/825)   Receiving objects:   8% (66/825)   Receiving objects:   9% (75/825)   Receiving objects:  10% (83/825)   Receiving objects:  11% (91/825)   Receiving objects:  12% (99/825)   Receiving objects:  13% (108/825)   Receiving objects:  14% (116/825)   Receiving objects:  15% (124/825)   Receiving objects:  16% (132/825)   Receiving objects:  17% (141/825)   Receiving objects:  18% (149/825)   Receiving objects:  19% (157/825)   Receiving objects:  20% (165/825)   Receiving objects:  21% (174/825)   Receiving objects:  22% (182/825)   Receiving objects:  23% (190/825)   Receiving objects:  24% (198/825)   Receiving objects:  25% (207/825)   Receiving objects:  26% (215/825)   Receiving objects:  27% (223/825)   Receiving objects:  28% (231/825)   Receiving objects:  29% (240/825)   Receiving objects:  30% (248/825)   Receiving objects:  31% (256/825)   Receiving objects:  32% (264/825)   Receiving objects:  33% (273/825)   Receiving objects:  34% (281/825)   Receiving objects:  35% (289/825)   Receiving objects:  36% (297/825)   Receiving objects:  37% (306/825)   Receiving objects:  38% (314/825)   Receiving objects:  39% (322/825)   Receiving objects:  40% (330/825)   Receiving objects:  41% (339/825)   Receiving objects:  42% (347/825)   Receiving objects:  43% (355/825)   Receiving objects:  44% (363/825)   Receiving objects:  45% (372/825)   Receiving objects:  46% (380/825)   Receiving objects:  47% (388/825)   Receiving objects:  48% (396/825)   Receiving objects:  49% (405/825)   Receiving objects:  50% (413/825)   Receiving objects:  51% (421/825)   Receiving objects:  52% (429/825)   Receiving objects:  53% (438/825)   Receiving objects:  54% (446/825)   Receiving objects:  55% (454/825)   Receiving objects:  56% (462/825)   Receiving objects:  57% (471/825)   Receiving objects:  58% (479/825)   Receiving objects:  59% (487/825)   Receiving objects:  60% (495/825)   Receiving objects:  61% (504/825)   Receiving objects:  62% (512/825)   Receiving objects:  63% (520/825)   Receiving objects:  64% (528/825)   Receiving objects:  65% (537/825)   Receiving objects:  66% (545/825)   Receiving objects:  67% (553/825)   Receiving objects:  68% (561/825)   Receiving objects:  69% (570/825)   Receiving objects:  70% (578/825)   Receiving objects:  71% (586/825)   Receiving objects:  72% (594/825)   Receiving objects:  73% (603/825)   Receiving objects:  74% (611/825)   Receiving objects:  75% (619/825)   Receiving objects:  76% (627/825)   Receiving objects:  77% (636/825)   Receiving objects:  78% (644/825)   Receiving objects:  79% (652/825)   Receiving objects:  80% (660/825)   Receiving objects:  81% (669/825)   Receiving objects:  82% (677/825)   Receiving objects:  83% (685/825)   Receiving objects:  84% (693/825)   Receiving objects:  85% (702/825)   Receiving objects:  86% (710/825)   Receiving objects:  87% (718/825)   Receiving objects:  88% (726/825)   Receiving objects:  89% (735/825)   Receiving objects:  90% (743/825)   Receiving objects:  91% (751/825)   Receiving objects:  92% (759/825)   Receiving objects:  93% (768/825)   Receiving objects:  94% (776/825)   Receiving objects:  95% (784/825)   Receiving objects:  96% (792/825)   Receiving objects:  97% (801/825)   remote: Total 825 (delta 506), reused 690 (delta 403), pack-reused 0[K
+Receiving objects:  98% (809/825)   Receiving objects:  99% (817/825)   Receiving objects: 100% (825/825)   Receiving objects: 100% (825/825), 1004.83 KiB | 10.15 MiB/s, done.
+Resolving deltas:   0% (0/506)   Resolving deltas:   1% (6/506)   Resolving deltas:   3% (16/506)   Resolving deltas:   5% (27/506)   Resolving deltas:  17% (88/506)   Resolving deltas:  20% (106/506)   Resolving deltas:  29% (151/506)   Resolving deltas:  30% (152/506)   Resolving deltas:  31% (158/506)   Resolving deltas:  34% (177/506)   Resolving deltas:  36% (185/506)   Resolving deltas:  38% (194/506)   Resolving deltas:  42% (217/506)   Resolving deltas:  44% (223/506)   Resolving deltas:  45% (229/506)   Resolving deltas:  47% (242/506)   Resolving deltas:  50% (255/506)   Resolving deltas:  52% (266/506)   Resolving deltas:  53% (269/506)   Resolving deltas:  54% (278/506)   Resolving deltas:  55% (279/506)   Resolving deltas:  57% (292/506)   Resolving deltas:  58% (298/506)   Resolving deltas:  59% (299/506)   Resolving deltas:  61% (309/506)   Resolving deltas:  65% (332/506)   Resolving deltas:  66% (334/506)   Resolving deltas:  67% (341/506)   Resolving deltas:  75% (380/506)   Resolving deltas:  77% (391/506)   Resolving deltas:  78% (398/506)   Resolving deltas:  79% (401/506)   Resolving deltas:  80% (408/506)   Resolving deltas:  81% (410/506)   Resolving deltas:  84% (430/506)   Resolving deltas:  86% (436/506)   Resolving deltas:  89% (454/506)   Resolving deltas:  90% (456/506)   Resolving deltas: 100% (506/506)   Resolving deltas: 100% (506/506), done.
+travis_time:end:06af0d2b:start=1584979244416268039,finish=1584979245120902011,duration=704633972,event=checkout[0K$ cd wpengine/phpcompat
+travis_time:start:03d68875[0K$ git fetch origin +refs/pull/263/merge:
+remote: Enumerating objects: 43, done.[K
+remote: Counting objects:   2% (1/34)[Kremote: Counting objects:   5% (2/34)[Kremote: Counting objects:   8% (3/34)[Kremote: Counting objects:  11% (4/34)[Kremote: Counting objects:  14% (5/34)[Kremote: Counting objects:  17% (6/34)[Kremote: Counting objects:  20% (7/34)[Kremote: Counting objects:  23% (8/34)[Kremote: Counting objects:  26% (9/34)[Kremote: Counting objects:  29% (10/34)[Kremote: Counting objects:  32% (11/34)[Kremote: Counting objects:  35% (12/34)[Kremote: Counting objects:  38% (13/34)[Kremote: Counting objects:  41% (14/34)[Kremote: Counting objects:  44% (15/34)[Kremote: Counting objects:  47% (16/34)[Kremote: Counting objects:  50% (17/34)[Kremote: Counting objects:  52% (18/34)[Kremote: Counting objects:  55% (19/34)[Kremote: Counting objects:  58% (20/34)[Kremote: Counting objects:  61% (21/34)[Kremote: Counting objects:  64% (22/34)[Kremote: Counting objects:  67% (23/34)[Kremote: Counting objects:  70% (24/34)[Kremote: Counting objects:  73% (25/34)[Kremote: Counting objects:  76% (26/34)[Kremote: Counting objects:  79% (27/34)[Kremote: Counting objects:  82% (28/34)[Kremote: Counting objects:  85% (29/34)[Kremote: Counting objects:  88% (30/34)[Kremote: Counting objects:  91% (31/34)[Kremote: Counting objects:  94% (32/34)[Kremote: Counting objects:  97% (33/34)[Kremote: Counting objects: 100% (34/34)[Kremote: Counting objects: 100% (34/34), done.[K
+remote: Compressing objects:  16% (1/6)[Kremote: Compressing objects:  33% (2/6)[Kremote: Compressing objects:  50% (3/6)[Kremote: Compressing objects:  66% (4/6)[Kremote: Compressing objects:  83% (5/6)[Kremote: Compressing objects: 100% (6/6)[Kremote: Compressing objects: 100% (6/6), done.[K
+Unpacking objects:   7% (1/13)   Unpacking objects:  15% (2/13)   Unpacking objects:  23% (3/13)   Unpacking objects:  30% (4/13)   Unpacking objects:  38% (5/13)   Unpacking objects:  46% (6/13)   Unpacking objects:  53% (7/13)   Unpacking objects:  61% (8/13)   Unpacking objects:  69% (9/13)   Unpacking objects:  76% (10/13)   remote: Total 13 (delta 5), reused 12 (delta 5), pack-reused 0[K
+Unpacking objects:  84% (11/13)   Unpacking objects:  92% (12/13)   Unpacking objects: 100% (13/13)   Unpacking objects: 100% (13/13), done.
+From https://github.com/wpengine/phpcompat
+ * branch            refs/pull/263/merge -> FETCH_HEAD
+travis_time:end:03d68875:start=1584979245125185266,finish=1584979245597165111,duration=471979845,event=checkout[0K$ git checkout -qf FETCH_HEAD
+travis_fold:end:git.checkout[0K
+travis_time:end:03d68875:start=1584979245125185266,finish=1584979245605692518,duration=480507252,event=checkout[0Ktravis_time:start:09a2b1c6[0K
+[33;1mSetting environment variables from .travis.yml[0m
+$ export WP_VERSION=latest
+$ export WP_MULTISITE=1
+$ export PHPCS=1
+
+travis_time:end:09a2b1c6:start=1584979245609066898,finish=1584979245614587708,duration=5520810,event=env[0Ktravis_time:start:00bc69f7[0K$ phpenv global 7.3 2>/dev/null
+travis_time:end:00bc69f7:start=1584979245617553490,finish=1584979245632303404,duration=14749914,event=setup[0K[33;1m7.3 is not pre-installed; installing[0m
+[33;1mDownloading archive: https://storage.googleapis.com/travis-ci-language-archives/php/binaries/ubuntu/14.04/x86_64/php-7.3.tar.bz2[0m
+travis_time:start:06eb4dfc[0K$ curl -sSf --retry 5 -o archive.tar.bz2 $archive_url && tar xjf archive.tar.bz2 --directory /
+travis_time:end:06eb4dfc:start=1584979245697551272,finish=1584979254759592107,duration=9062040835,event=setup[0Ktravis_time:start:0c291240[0Ktravis_time:end:0c291240:start=1584979254763113491,finish=1584979254775429164,duration=12315673,event=setup[0Ktravis_time:start:04171dd8[0K$ phpenv global 7.3
+travis_time:end:04171dd8:start=1584979254778621041,finish=1584979254792158861,duration=13537820,event=setup[0Ktravis_time:start:01a4c73c[0K$ composer self-update
+[32mYou are already using composer version 1.10.1 (stable channel).[39m
+travis_time:end:01a4c73c:start=1584979255020666158,finish=1584979255333172581,duration=312506423,event=setup[0K$ php --version
+PHP 7.3.16 (cli) (built: Mar 18 2020 13:08:58) ( ZTS )
+Copyright (c) 1997-2018 The PHP Group
+Zend Engine v3.3.16, Copyright (c) 1998-2018 Zend Technologies
+    with Zend OPcache v7.3.16, Copyright (c) 1999-2018, by Zend Technologies
+    with Xdebug v2.9.3, Copyright (c) 2002-2020, by Derick Rethans
+$ composer --version
+[32mComposer[39m version [33m1.10.1[39m 2020-03-13 20:34:27
+[0m
+travis_fold:start:before_script.1[0Ktravis_time:start:02212620[0K$ stable='^[0-9\.]+$'
+  if [[ "$TRAVIS_PHP_VERSION" =~ $stable ]]; then
+    if [ -f ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/xdebug.ini ]; then
+      phpenv config-rm xdebug.ini
+    fi
+  fi
+  
+File xdebug.ini removed from /home/travis/.phpenv/versions/7.3/etc/conf.d.
+travis_time:end:02212620:start=1584979255537345676,finish=1584979255575382567,duration=38036891,event=before_script[0Ktravis_fold:end:before_script.1[0Ktravis_fold:start:before_script.2[0Ktravis_time:start:0c9b0bba[0K$ if [[ "$NPM_TESTS" == "1" ]]; then
+    rm -rf ~/.nvm
+    git clone https://github.com/creationix/nvm.git ~/.nvm
+    cd ~/.nvm
+    git checkout `git describe --abbrev=0 --tags`
+    cd $TRAVIS_BUILD_DIR
+    source ~/.nvm/nvm.sh
+    nvm install 8
+    npm install
+  fi
+  
+travis_time:end:0c9b0bba:start=1584979255579219726,finish=1584979255581439927,duration=2220201,event=before_script[0Ktravis_fold:end:before_script.2[0Ktravis_fold:start:before_script.3[0Ktravis_time:start:1b8e3380[0K$ export PATH="$HOME/.composer/vendor/bin:$PATH"
+travis_time:end:1b8e3380:start=1584979255584778029,finish=1584979255586921514,duration=2143485,event=before_script[0Ktravis_fold:end:before_script.3[0Ktravis_fold:start:before_script.4[0Ktravis_time:start:1555ea00[0K$ case "$TRAVIS_PHP_VERSION" in
+    5.6|5.5|5.4|5.3)
+      composer global require consolidation/cgr
+      PATH="$(composer config -g home)/vendor/bin:$PATH"
+      cgr "phpunit/phpunit:^4"
+      ;;
+    5.2)
+      ;;
+    *)
+      composer global require consolidation/cgr
+      PATH="$(composer config -g home)/vendor/bin:$PATH"
+      cgr "phpunit/phpunit:^6"
+      ;;
+  esac
+  
+[32mChanged current directory to /home/travis/.config/composer[39m
+Using version [32m^2.0[39m for [32mconsolidation/cgr[39m
+[32m./composer.json has been created[39m
+[32mLoading composer repositories with package information[39m
+[32mUpdating dependencies (including require-dev)[39m
+[32mPackage operations: 1 install, 0 updates, 0 removals[39m
+  - Installing [32mconsolidation/cgr[39m ([33m2.0.5[39m): Downloading ([33mconnecting...[39m)Downloading ([33m0%[39m)           Downloading ([33m45%[39m)Downloading ([33m90%[39m)Downloading ([33m100%[39m)
+[32mWriting lock file[39m
+[32mGenerating autoload files[39m
+>> Running: composer '--working-dir=/home/travis/.config/composer/global/phpunit/phpunit' require 'phpunit/phpunit:^6'
+[32m./composer.json has been created[39m
+[32mLoading composer repositories with package information[39m
+[32mUpdating dependencies (including require-dev)[39m
+[32mPackage operations: 29 installs, 0 updates, 0 removals[39m
+  - Installing [32msebastian/version[39m ([33m2.0.1[39m): Downloading ([33mconnecting...[39m)Downloading ([33m0%[39m)           Downloading ([33m100%[39m)
+  - Installing [32msebastian/resource-operations[39m ([33m1.0.0[39m): Downloading ([33mconnecting...[39m)Downloading ([33m0%[39m)           Downloading ([33m65%[39m)Downloading ([33m100%[39m)
+  - Installing [32msebastian/recursion-context[39m ([33m3.0.0[39m): Downloading ([33mconnecting...[39m)Downloading ([33m0%[39m)           Downloading ([33m35%[39m)Downloading ([33m70%[39m)Downloading ([33m100%[39m)
+  - Installing [32msebastian/object-reflector[39m ([33m1.1.1[39m): Downloading ([33mconnecting...[39m)Downloading ([33m0%[39m)           Downloading ([33m65%[39m)Downloading ([33m95%[39m)Downloading ([33m100%[39m)
+  - Installing [32msebastian/object-enumerator[39m ([33m3.0.3[39m): Downloading ([33mconnecting...[39m)Downloading ([33m0%[39m)           Downloading ([33m100%[39m)
+  - Installing [32msebastian/global-state[39m ([33m2.0.0[39m): Downloading ([33mconnecting...[39m)Downloading ([33m0%[39m)           Downloading ([33m20%[39m)Downloading ([33m75%[39m)Downloading ([33m95%[39m)Downloading ([33m100%[39m)
+  - Installing [32msebastian/exporter[39m ([33m3.1.2[39m): Downloading ([33mconnecting...[39m)Downloading ([33m0%[39m)           Downloading ([33m10%[39m)Downloading ([33m20%[39m)Downloading ([33m30%[39m)Downloading ([33m40%[39m)Downloading ([33m50%[39m)Downloading ([33m60%[39m)Downloading ([33m70%[39m)Downloading ([33m80%[39m)Downloading ([33m90%[39m)Downloading ([33m100%[39m)
+  - Installing [32msebastian/environment[39m ([33m3.1.0[39m): Downloading ([33mconnecting...[39m)Downloading ([33m0%[39m)           Downloading ([33m45%[39m)Downloading ([33m90%[39m)Downloading ([33m95%[39m)Downloading ([33m100%[39m)
+  - Installing [32msebastian/diff[39m ([33m2.0.1[39m): Downloading ([33mconnecting...[39m)Downloading ([33m0%[39m)           Downloading ([33m25%[39m)Downloading ([33m50%[39m)Downloading ([33m55%[39m)Downloading ([33m95%[39m)Downloading ([33m100%[39m)
+  - Installing [32msebastian/comparator[39m ([33m2.1.3[39m): Downloading ([33mconnecting...[39m)Downloading ([33m0%[39m)           Downloading ([33m10%[39m)Downloading ([33m25%[39m)Downloading ([33m35%[39m)Downloading ([33m45%[39m)Downloading ([33m55%[39m)Downloading ([33m65%[39m)Downloading ([33m75%[39m)Downloading ([33m100%[39m)
+  - Installing [32mdoctrine/instantiator[39m ([33m1.3.0[39m): Downloading ([33mconnecting...[39m)Downloading ([33m0%[39m)           Downloading ([33m45%[39m)Downloading ([33m95%[39m)Downloading ([33m100%[39m)
+  - Installing [32mphpunit/php-text-template[39m ([33m1.2.1[39m): Downloading ([33mconnecting...[39m)Downloading ([33m0%[39m)           Downloading ([33m35%[39m)Downloading ([33m100%[39m)
+  - Installing [32mphpunit/phpunit-mock-objects[39m ([33m5.0.10[39m): Downloading ([33mconnecting...[39m)Downloading ([33m0%[39m)           Downloading ([33m5%[39m)Downloading ([33m10%[39m)Downloading ([33m15%[39m)Downloading ([33m20%[39m)Downloading ([33m25%[39m)Downloading ([33m30%[39m)Downloading ([33m35%[39m)Downloading ([33m40%[39m)Downloading ([33m45%[39m)Downloading ([33m50%[39m)Downloading ([33m55%[39m)Downloading ([33m60%[39m)Downloading ([33m65%[39m)Downloading ([33m70%[39m)Downloading ([33m75%[39m)Downloading ([33m80%[39m)Downloading ([33m85%[39m)Downloading ([33m90%[39m)Downloading ([33m95%[39m)Downloading ([33m100%[39m)
+  - Installing [32mphpunit/php-timer[39m ([33m1.0.9[39m): Downloading ([33mconnecting...[39m)Downloading ([33m0%[39m)           Downloading ([33m45%[39m)Downloading ([33m90%[39m)Downloading ([33m100%[39m)
+  - Installing [32mphpunit/php-file-iterator[39m ([33m1.4.5[39m): Downloading ([33mconnecting...[39m)Downloading ([33m0%[39m)           Downloading ([33m100%[39m)
+  - Installing [32mtheseer/tokenizer[39m ([33m1.1.3[39m): Downloading ([33mconnecting...[39m)Downloading ([33m0%[39m)           Downloading ([33m15%[39m)Downloading ([33m30%[39m)Downloading ([33m100%[39m)
+  - Installing [32msebastian/code-unit-reverse-lookup[39m ([33m1.0.1[39m): Downloading ([33mconnecting...[39m)Downloading ([33m0%[39m)           Downloading ([33m55%[39m)Downloading ([33m100%[39m)
+  - Installing [32mphpunit/php-token-stream[39m ([33m2.0.2[39m): Downloading ([33mconnecting...[39m)Downloading ([33m0%[39m)           Downloading ([33m5%[39m)Downloading ([33m10%[39m)Downloading ([33m55%[39m)Downloading ([33m60%[39m)Downloading ([33m65%[39m)Downloading ([33m70%[39m)Downloading ([33m75%[39m)Downloading ([33m100%[39m)
+  - Installing [32mphpunit/php-code-coverage[39m ([33m5.3.2[39m): Downloading ([33mconnecting...[39m)Downloading ([33m0%[39m)           Downloading ([33m5%[39m)Downloading ([33m10%[39m)Downloading ([33m15%[39m)Downloading ([33m20%[39m)Downloading ([33m25%[39m)Downloading ([33m30%[39m)Downloading ([33m35%[39m)Downloading ([33m40%[39m)Downloading ([33m45%[39m)Downloading ([33m50%[39m)Downloading ([33m55%[39m)Downloading ([33m60%[39m)Downloading ([33m65%[39m)Downloading ([33m75%[39m)Downloading ([33m80%[39m)Downloading ([33m90%[39m)Downloading ([33m100%[39m)
+  - Installing [32msymfony/polyfill-ctype[39m ([33mv1.14.0[39m): Downloading ([33mconnecting...[39m)Downloading ([33m0%[39m)           Downloading ([33m100%[39m)
+  - Installing [32mwebmozart/assert[39m ([33m1.7.0[39m): Downloading ([33mconnecting...[39m)Downloading ([33m0%[39m)           Downloading ([33m75%[39m)Downloading ([33m100%[39m)
+  - Installing [32mphpdocumentor/reflection-common[39m ([33m2.0.0[39m): Downloading ([33mconnecting...[39m)Downloading ([33m0%[39m)           Downloading ([33m65%[39m)Downloading ([33m90%[39m)Downloading ([33m95%[39m)Downloading ([33m100%[39m)
+  - Installing [32mphpdocumentor/type-resolver[39m ([33m1.1.0[39m): Downloading ([33mconnecting...[39m)Downloading ([33m0%[39m)           Downloading ([33m15%[39m)Downloading ([33m30%[39m)Downloading ([33m45%[39m)Downloading ([33m60%[39m)Downloading ([33m70%[39m)Downloading ([33m85%[39m)Downloading ([33m100%[39m)
+  - Installing [32mphpdocumentor/reflection-docblock[39m ([33m5.1.0[39m): Downloading ([33mconnecting...[39m)Downloading ([33m0%[39m)           Downloading ([33m5%[39m)Downloading ([33m20%[39m)Downloading ([33m25%[39m)Downloading ([33m60%[39m)Downloading ([33m65%[39m)Downloading ([33m80%[39m)Downloading ([33m85%[39m)Downloading ([33m100%[39m)
+  - Installing [32mphpspec/prophecy[39m ([33mv1.10.3[39m): Downloading ([33mconnecting...[39m)Downloading ([33m0%[39m)           Downloading ([33m10%[39m)Downloading ([33m15%[39m)Downloading ([33m20%[39m)Downloading ([33m25%[39m)Downloading ([33m30%[39m)Downloading ([33m35%[39m)Downloading ([33m45%[39m)Downloading ([33m55%[39m)Downloading ([33m60%[39m)Downloading ([33m65%[39m)Downloading ([33m70%[39m)Downloading ([33m75%[39m)Downloading ([33m80%[39m)Downloading ([33m90%[39m)Downloading ([33m100%[39m)
+  - Installing [32mphar-io/version[39m ([33m1.0.1[39m): Downloading ([33mconnecting...[39m)Downloading ([33m0%[39m)           Downloading ([33m50%[39m)Downloading ([33m55%[39m)Downloading ([33m100%[39m)
+  - Installing [32mphar-io/manifest[39m ([33m1.0.1[39m): Downloading ([33mconnecting...[39m)Downloading ([33m0%[39m)           Downloading ([33m10%[39m)Downloading ([33m20%[39m)Downloading ([33m35%[39m)Downloading ([33m40%[39m)Downloading ([33m50%[39m)Downloading ([33m60%[39m)Downloading ([33m70%[39m)Downloading ([33m80%[39m)Downloading ([33m90%[39m)Downloading ([33m95%[39m)Downloading ([33m100%[39m)
+  - Installing [32mmyclabs/deep-copy[39m ([33m1.9.5[39m): Downloading ([33mconnecting...[39m)Downloading ([33m0%[39m)           Downloading ([33m5%[39m)Downloading ([33m10%[39m)Downloading ([33m45%[39m)Downloading ([33m50%[39m)Downloading ([33m90%[39m)Downloading ([33m95%[39m)Downloading ([33m100%[39m)
+  - Installing [32mphpunit/phpunit[39m ([33m6.5.14[39m): Downloading ([33mconnecting...[39m)Downloading ([33m0%[39m)           Downloading ([33m5%[39m)Downloading ([33m10%[39m)Downloading ([33m15%[39m)Downloading ([33m20%[39m)Downloading ([33m25%[39m)Downloading ([33m30%[39m)Downloading ([33m35%[39m)Downloading ([33m40%[39m)Downloading ([33m45%[39m)Downloading ([33m50%[39m)Downloading ([33m55%[39m)Downloading ([33m60%[39m)Downloading ([33m65%[39m)Downloading ([33m70%[39m)Downloading ([33m75%[39m)Downloading ([33m80%[39m)Downloading ([33m85%[39m)Downloading ([33m90%[39m)Downloading ([33m95%[39m)Downloading ([33m100%[39m)
+sebastian/global-state suggests installing ext-uopz (*)
+phpunit/php-code-coverage suggests installing ext-xdebug (^2.5.5)
+phpunit/phpunit suggests installing phpunit/php-invoker (^1.1)
+phpunit/phpunit suggests installing ext-xdebug (*)
+[30;43mPackage phpunit/phpunit-mock-objects is abandoned, you should avoid using it. No replacement was suggested.[39;49m
+[32mWriting lock file[39m
+[32mGenerating autoload files[39m
+travis_time:end:1555ea00:start=1584979255590135165,finish=1584979285987991344,duration=30397856179,event=before_script[0Ktravis_fold:end:before_script.4[0Ktravis_fold:start:before_script.5[0Ktravis_time:start:1f9e27e5[0K$ if [[ "$TRAVIS_PHP_VERSION" == "5.2" ]]; then
+    phpenv global 5.4
+    composer install
+    phpenv global "$TRAVIS_PHP_VERSION"
+  else
+    composer install
+  fi
+  
+[32mLoading composer repositories with package information[39m
+[32mInstalling dependencies (including require-dev) from lock file[39m
+[32mPackage operations: 32 installs, 0 updates, 0 removals[39m
+  - Installing [32msquizlabs/php_codesniffer[39m ([33m2.9.2[39m): Downloading ([33mconnecting...[39m)Downloading ([33m0%[39m)           Downloading ([33m5%[39m)Downloading ([33m10%[39m)Downloading ([33m15%[39m)Downloading ([33m20%[39m)Downloading ([33m25%[39m)Downloading ([33m30%[39m)Downloading ([33m35%[39m)Downloading ([33m40%[39m)Downloading ([33m45%[39m)Downloading ([33m50%[39m)Downloading ([33m55%[39m)Downloading ([33m75%[39m)Downloading ([33m80%[39m)Downloading ([33m85%[39m)Downloading ([33m90%[39m)Downloading ([33m95%[39m)Downloading ([33m100%[39m)
+  - Installing [32mdealerdirect/phpcodesniffer-composer-installer[39m ([33mv0.4.4[39m): Downloading ([33mconnecting...[39m)Downloading ([33m100%[39m)         
+  - Installing [32mphpcompatibility/php-compatibility[39m ([33m9.2.0[39m): Downloading ([33mconnecting...[39m)Downloading ([33m100%[39m)         
+  - Installing [32mphpcompatibility/phpcompatibility-paragonie[39m ([33m1.0.1[39m): Downloading ([33mconnecting...[39m)Downloading ([33m100%[39m)         
+  - Installing [32mphpcompatibility/phpcompatibility-wp[39m ([33m2.0.0[39m): Downloading ([33mconnecting...[39m)Downloading ([33m100%[39m)         
+  - Installing [32msymfony/polyfill-ctype[39m ([33mv1.14.0[39m): Loading from cache
+  - Installing [32mwebmozart/assert[39m ([33m1.7.0[39m): Loading from cache
+  - Installing [32mphpdocumentor/reflection-common[39m ([33m2.0.0[39m): Loading from cache
+  - Installing [32mphpdocumentor/type-resolver[39m ([33m1.1.0[39m): Loading from cache
+  - Installing [32mphpdocumentor/reflection-docblock[39m ([33m5.1.0[39m): Loading from cache
+  - Installing [32mphpunit/php-token-stream[39m ([33m2.0.2[39m): Loading from cache
+  - Installing [32msymfony/yaml[39m ([33mv4.4.5[39m): Downloading ([33mconnecting...[39m)Downloading ([33m0%[39m)           Downloading ([33m45%[39m)Downloading ([33m50%[39m)Downloading ([33m75%[39m)Downloading ([33m80%[39m)Downloading ([33m100%[39m)
+  - Installing [32msebastian/version[39m ([33m2.0.1[39m): Loading from cache
+  - Installing [32msebastian/resource-operations[39m ([33m1.0.0[39m): Loading from cache
+  - Installing [32msebastian/recursion-context[39m ([33m2.0.0[39m): Downloading ([33mconnecting...[39m)Downloading ([33m0%[39m)           Downloading ([33m100%[39m)
+  - Installing [32msebastian/object-enumerator[39m ([33m2.0.1[39m): Downloading ([33mconnecting...[39m)Downloading ([33m0%[39m)           Downloading ([33m100%[39m)
+  - Installing [32msebastian/global-state[39m ([33m1.1.1[39m): Downloading ([33mconnecting...[39m)Downloading ([33m0%[39m)           Downloading ([33m40%[39m)Downloading ([33m80%[39m)Downloading ([33m100%[39m)
+  - Installing [32msebastian/exporter[39m ([33m2.0.0[39m): Downloading ([33mconnecting...[39m)Downloading ([33m0%[39m)           Downloading ([33m100%[39m)
+  - Installing [32msebastian/environment[39m ([33m2.0.0[39m): Downloading ([33mconnecting...[39m)Downloading ([33m0%[39m)           Downloading ([33m15%[39m)Downloading ([33m30%[39m)Downloading ([33m45%[39m)Downloading ([33m60%[39m)Downloading ([33m75%[39m)Downloading ([33m90%[39m)Downloading ([33m100%[39m)
+  - Installing [32msebastian/diff[39m ([33m1.4.3[39m): Downloading ([33mconnecting...[39m)Downloading ([33m0%[39m)               [30;43mFailed to download sebastian/diff from dist: Could not authenticate against github.com[39;49m
+    [30;43mNow trying to download from source[39;49m
+  - Installing [32msebastian/diff[39m ([33m1.4.3[39m): Cloning 7f066a26a9 from cache
+  - Installing [32msebastian/comparator[39m ([33m1.2.4[39m): Downloading ([33mconnecting...[39m)Downloading ([33m0%[39m)               [30;43mFailed to download sebastian/comparator from dist: Could not authenticate against github.com[39;49m
+    [30;43mNow trying to download from source[39;49m
+  - Installing [32msebastian/comparator[39m ([33m1.2.4[39m): Cloning 2b7424b55f from cache
+  - Installing [32mphpunit/php-text-template[39m ([33m1.2.1[39m): Loading from cache
+  - Installing [32mdoctrine/instantiator[39m ([33m1.3.0[39m): Loading from cache
+  - Installing [32mphpunit/phpunit-mock-objects[39m ([33m3.4.4[39m): Downloading ([33mconnecting...[39m)Downloading ([33m0%[39m)           Downloading ([33m5%[39m)Downloading ([33m10%[39m)Downloading ([33m15%[39m)Downloading ([33m20%[39m)Downloading ([33m25%[39m)Downloading ([33m30%[39m)Downloading ([33m35%[39m)Downloading ([33m40%[39m)Downloading ([33m45%[39m)Downloading ([33m55%[39m)Downloading ([33m60%[39m)Downloading ([33m65%[39m)Downloading ([33m70%[39m)Downloading ([33m75%[39m)Downloading ([33m80%[39m)Downloading ([33m90%[39m)Downloading ([33m95%[39m)Downloading ([33m100%[39m)
+  - Installing [32mphpunit/php-timer[39m ([33m1.0.9[39m): Loading from cache
+  - Installing [32mphpunit/php-file-iterator[39m ([33m1.4.5[39m): Loading from cache
+  - Installing [32msebastian/code-unit-reverse-lookup[39m ([33m1.0.1[39m): Loading from cache
+  - Installing [32mphpunit/php-code-coverage[39m ([33m4.0.8[39m): Downloading ([33mconnecting...[39m)Downloading ([33m0%[39m)           Downloading ([33m5%[39m)Downloading ([33m10%[39m)Downloading ([33m15%[39m)Downloading ([33m20%[39m)Downloading ([33m25%[39m)Downloading ([33m30%[39m)Downloading ([33m35%[39m)Downloading ([33m40%[39m)Downloading ([33m45%[39m)Downloading ([33m50%[39m)Downloading ([33m55%[39m)Downloading ([33m60%[39m)Downloading ([33m65%[39m)Downloading ([33m75%[39m)Downloading ([33m80%[39m)Downloading ([33m90%[39m)Downloading ([33m100%[39m)
+  - Installing [32mphpspec/prophecy[39m ([33mv1.10.3[39m): Loading from cache
+  - Installing [32mmyclabs/deep-copy[39m ([33m1.9.5[39m): Loading from cache
+  - Installing [32mphpunit/phpunit[39m ([33m5.7.27[39m): Downloading ([33mconnecting...[39m)Downloading ([33m0%[39m)           Downloading ([33m5%[39m)Downloading ([33m10%[39m)Downloading ([33m15%[39m)Downloading ([33m20%[39m)Downloading ([33m25%[39m)Downloading ([33m30%[39m)Downloading ([33m35%[39m)Downloading ([33m40%[39m)Downloading ([33m45%[39m)Downloading ([33m50%[39m)Downloading ([33m55%[39m)Downloading ([33m60%[39m)Downloading ([33m70%[39m)Downloading ([33m75%[39m)Downloading ([33m90%[39m)Downloading ([33m95%[39m)Downloading ([33m100%[39m)
+  - Installing [32mwp-coding-standards/wpcs[39m ([33m1.2.1[39m): Downloading ([33mconnecting...[39m)Downloading ([33m0%[39m)           Downloading ([33m5%[39m)Downloading ([33m10%[39m)Downloading ([33m15%[39m)Downloading ([33m20%[39m)Downloading ([33m25%[39m)Downloading ([33m30%[39m)Downloading ([33m35%[39m)Downloading ([33m40%[39m)Downloading ([33m45%[39m)Downloading ([33m50%[39m)Downloading ([33m55%[39m)Downloading ([33m60%[39m)Downloading ([33m65%[39m)Downloading ([33m70%[39m)Downloading ([33m75%[39m)Downloading ([33m80%[39m)Downloading ([33m85%[39m)Downloading ([33m90%[39m)Downloading ([33m95%[39m)Downloading ([33m100%[39m)
+dealerdirect/phpcodesniffer-composer-installer suggests installing dealerdirect/qa-tools (All the PHP QA tools you'll need)
+phpcompatibility/php-compatibility suggests installing roave/security-advisories (dev-master || Helps prevent installing dependencies with known security issues.)
+phpcompatibility/phpcompatibility-paragonie suggests installing roave/security-advisories (dev-master || Helps prevent installing dependencies with known security issues.)
+phpcompatibility/phpcompatibility-wp suggests installing roave/security-advisories (dev-master || Helps prevent installing dependencies with known security issues.)
+symfony/yaml suggests installing symfony/console (For validating YAML files using the lint command)
+sebastian/global-state suggests installing ext-uopz (*)
+phpunit/php-code-coverage suggests installing ext-xdebug (^2.5.1)
+phpunit/phpunit suggests installing ext-xdebug (*)
+phpunit/phpunit suggests installing phpunit/php-invoker (~1.1)
+[30;43mPackage phpunit/phpunit-mock-objects is abandoned, you should avoid using it. No replacement was suggested.[39;49m
+[32mGenerating autoload files[39m
+[32m1 package you are using is looking for funding.[39m
+[32mUse the `composer fund` command to find out more![39m
+PHP CodeSniffer Config [32minstalled_paths[39m [33mset to[39m [32m../../phpcompatibility/php-compatibility/,../../phpcompatibility/phpcompatibility-paragonie/,../../phpcompatibility/phpcompatibility-wp/,../../wp-coding-standards/wpcs/[39m
+> cd php52; composer install; cd ..
+Loading composer repositories with package information
+Installing dependencies (including require-dev) from lock file
+Package operations: 3 installs, 0 updates, 0 removals
+  - Installing squizlabs/php_codesniffer (2.9.2): Loading from cache
+  - Installing wimg/php-compatibility (7.1.5): Downloading (connecting...)Downloading (0%)           Downloading (100%)
+  - Installing xrstf/composer-php52 (v1.0.20): Downloading (connecting...)Downloading (100%)         
+Generating autoload files
+> xrstf\Composer52\Generator::onPostInstallCmd
+> xrstf\Composer52\Generator::onPostInstallCmd
+> vendor/bin/phpcs --config-delete installed_paths
+Config value "installed_paths" has not been set
+> rm -rf vendor/squizlabs/php_codesniffer/CodeSniffer/Standards/PHPCompatibility; cp -rp vendor/wimg/php-compatibility vendor/squizlabs/php_codesniffer/CodeSniffer/Standards/PHPCompatibility
+travis_time:end:1f9e27e5:start=1584979285991565360,finish=1584979298140895366,duration=12149330006,event=before_script[0Ktravis_fold:end:before_script.5[0Ktravis_fold:start:before_script.6[0Ktravis_time:start:0f49b04a[0K$ if [[ "$NPM_TESTS" != "1" ]]; then
+    tests/install-wp-tests.sh wordpress_tests travis "" localhost $WP_VERSION false
+    phpenv rehash
+  fi
+  
++install_wp
++'[' -d /tmp/wordpress/ ']'
++mkdir -p /tmp/wordpress/
++[[ latest == \n\i\g\h\t\l\y ]]
++[[ latest == \t\r\u\n\k ]]
++'[' latest == latest ']'
++local ARCHIVE_NAME=latest
++download https://wordpress.org/latest.tar.gz /tmp/wordpress.tar.gz
+++which curl
++'[' /usr/bin/curl ']'
++curl -s https://wordpress.org/latest.tar.gz
++tar --strip-components=1 -zxmf /tmp/wordpress.tar.gz -C /tmp/wordpress/
++download https://raw.github.com/markoheijnen/wp-mysqli/master/db.php /tmp/wordpress//wp-content/db.php
+++which curl
++'[' /usr/bin/curl ']'
++curl -s https://raw.github.com/markoheijnen/wp-mysqli/master/db.php
++install_test_suite
+++uname -s
++[[ Linux == \D\a\r\w\i\n ]]
++local ioption=-i
++'[' '!' -d /tmp/wordpress-tests-lib ']'
++mkdir -p /tmp/wordpress-tests-lib
++svn co --quiet https://develop.svn.wordpress.org/tags/5.3.2/tests/phpunit/includes/ /tmp/wordpress-tests-lib/includes
++svn co --quiet https://develop.svn.wordpress.org/tags/5.3.2/tests/phpunit/data/ /tmp/wordpress-tests-lib/data
++'[' '!' -f wp-tests-config.php ']'
++download https://develop.svn.wordpress.org/tags/5.3.2/wp-tests-config-sample.php /tmp/wordpress-tests-lib/wp-tests-config.php
+++which curl
++'[' /usr/bin/curl ']'
++curl -s https://develop.svn.wordpress.org/tags/5.3.2/wp-tests-config-sample.php
+++echo /tmp/wordpress/
+++sed 's:/\+$::'
++WP_CORE_DIR=/tmp/wordpress
++sed -i 's:dirname( __FILE__ ) . '\''/src/'\'':'\''/tmp/wordpress/'\'':' /tmp/wordpress-tests-lib/wp-tests-config.php
++sed -i s/youremptytestdbnamehere/wordpress_tests/ /tmp/wordpress-tests-lib/wp-tests-config.php
++sed -i s/yourusernamehere/travis/ /tmp/wordpress-tests-lib/wp-tests-config.php
++sed -i s/yourpasswordhere// /tmp/wordpress-tests-lib/wp-tests-config.php
++sed -i 's|localhost|localhost|' /tmp/wordpress-tests-lib/wp-tests-config.php
++install_db
++'[' false = true ']'
++PARTS=(${DB_HOST//\:/ })
++local PARTS
++local DB_HOSTNAME=localhost
++local DB_SOCK_OR_PORT=
++local EXTRA=
++'[' -z localhost ']'
+++echo
+++grep -e '^[0-9]\{1,\}$'
++'[' ']'
++'[' -z ']'
++'[' -z localhost ']'
++EXTRA=' --host=localhost --protocol=tcp'
++mysqladmin create wordpress_tests --user=travis --password= --host=localhost --protocol=tcp
+Warning: Using a password on the command line interface can be insecure.
+travis_time:end:0f49b04a:start=1584979298144306764,finish=1584979300391827754,duration=2247520990,event=before_script[0Ktravis_fold:end:before_script.6[0Ktravis_time:start:11e42407[0K$ if [[ "$PHPCS" == "1" ]]; then
+  composer phpcs
+fi
+
+if [[ "$NPM_TESTS" == "1" ]]; then
+  npm test
+else
+  bash php-lint.sh
+  phpunit
+fi
+> phpcs --standard=src/ruleset-wordpress.xml wpengine-phpcompat.php load-files.php src/*.php
+Installing...
+Installing network...
+Running as multisite...
+Not running ajax tests. To execute these, use --group ajax.
+Not running ms-files tests. To execute these, use --group ms-files.
+Not running external-http tests. To execute these, use --group external-http.
+PHPUnit 6.5.14 by Sebastian Bergmann and contributors.
+PHP Fatal error:  Uncaught Error: Call to undefined method SebastianBergmann\Environment\Runtime::discardsComments() in /home/travis/.config/composer/global/phpunit/phpunit/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:332
+Stack trace:
+#0 /home/travis/.config/composer/global/phpunit/phpunit/vendor/phpunit/phpunit/src/TextUI/Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#1 /home/travis/.config/composer/global/phpunit/phpunit/vendor/phpunit/phpunit/src/TextUI/Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#2 /home/travis/.config/composer/global/phpunit/phpunit/vendor/phpunit/phpunit/phpunit(53): PHPUnit\TextUI\Command::main()
+#3 {main}
+  thrown in /home/travis/.config/composer/global/phpunit/phpunit/vendor/phpunit/phpunit/src/TextUI/TestRunner.php on line 332
+
+Fatal error: Uncaught Error: Call to undefined method SebastianBergmann\Environment\Runtime::discardsComments() in /home/travis/.config/composer/global/phpunit/phpunit/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:332
+Stack trace:
+#0 /home/travis/.config/composer/global/phpunit/phpunit/vendor/phpunit/phpunit/src/TextUI/Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#1 /home/travis/.config/composer/global/phpunit/phpunit/vendor/phpunit/phpunit/src/TextUI/Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#2 /home/travis/.config/composer/global/phpunit/phpunit/vendor/phpunit/phpunit/phpunit(53): PHPUnit\TextUI\Command::main()
+#3 {main}
+  thrown in /home/travis/.config/composer/global/phpunit/phpunit/vendor/phpunit/phpunit/src/TextUI/TestRunner.php on line 332
+travis_time:end:11e42407:start=1584979300395225218,finish=1584979302257807191,duration=1862581973,event=script[0K[31;1mThe command "if [[ "$PHPCS" == "1" ]]; then
+  composer phpcs
+fi
+
+if [[ "$NPM_TESTS" == "1" ]]; then
+  npm test
+else
+  bash php-lint.sh
+  phpunit
+fi" exited with 255.[0m
+
+
+Done. Your build exited with 1.
